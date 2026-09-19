@@ -43,8 +43,12 @@ class MjSimulator():
         feasible_fts_cmd = fts_pos_cmd
 
         # calculate the graviety
-        fullM = np.ndarray(shape=(self.param_.n_qvel_, self.param_.n_qvel_), dtype=np.float64, order="C")
-        mujoco.mj_fullM(self.model_, fullM, self.data_.qM)
+        # MuJoCo 3.13+: mj_fullM(model, data, dst); older: mj_fullM(model, dst, data.qM)
+        fullM = np.zeros((self.param_.n_qvel_, self.param_.n_qvel_), dtype=np.float64, order="C")
+        if hasattr(self.data_, "qM"):
+            mujoco.mj_fullM(self.model_, fullM, self.data_.qM)
+        else:
+            mujoco.mj_fullM(self.model_, self.data_, fullM)
         fingertipM = fullM[-self.param_.n_cmd_:, :][:, -self.param_.n_cmd_:]
 
         desired_fts_pos = (curr_q[7:] + feasible_fts_cmd).copy()

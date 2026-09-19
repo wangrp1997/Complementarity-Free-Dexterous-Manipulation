@@ -27,7 +27,11 @@ class MjSimulator():
         self.set_goal(self.param_.target_p_, self.param_.target_q_)
         self.reset_env()
 
-        self.viewer_ = mujoco.viewer.launch_passive(self.model_, self.data_, key_callback=self.keyboardCallback)
+        self.headless_ = bool(getattr(self.param_, 'headless_', False))
+        if self.headless_:
+            self.viewer_ = None
+        else:
+            self.viewer_ = mujoco.viewer.launch_passive(self.model_, self.data_, key_callback=self.keyboardCallback)
 
         self.allegro_fd_fn()
 
@@ -67,7 +71,8 @@ class MjSimulator():
         for i in range(self.param_.frame_skip_):
             self.data_.ctrl = target_jpos
             mujoco.mj_step(self.model_, self.data_)
-            self.viewer_.sync()
+            if self.viewer_ is not None:
+                self.viewer_.sync()
             # print('error = ', np.linalg.norm(target_jpos - self.get_jpos()))
 
     def reset_fingers_qpos(self):
@@ -75,7 +80,8 @@ class MjSimulator():
             self.data_.ctrl = self.param_.init_robot_qpos_
             mujoco.mj_step(self.model_, self.data_)
             time.sleep(0.001)
-            self.viewer_.sync()
+            if self.viewer_ is not None:
+                self.viewer_.sync()
 
     def get_state(self):
         obj_pos = self.data_.qpos.flatten().copy()[-7:]
@@ -101,6 +107,25 @@ class MjSimulator():
             # self.model_.geom_quat[goal_id] = goal_quat
         mujoco.mj_forward(self.model_, self.data_)
         pass
+
+    def apply_object_plant_mismatch(self, com_offset, inertia_scale, sliding_friction):
+        """Shift only the MuJoCo object plant. MPC params stay unchanged."""
+        body_id = self.model_.body('obj').id
+        geom_id = self.model_.geom('obj').id
+        # compiled as a simple/sameframe body; COM offset breaks that assumption
+        self.model_.body_simple[body_id] = 0
+        self.model_.body_sameframe[body_id] = 0
+        self.model_.body_ipos[body_id] = np.asarray(com_offset, dtype=float)
+        self.model_.body_inertia[body_id] = self.model_.body_inertia[body_id] * np.asarray(inertia_scale, dtype=float)
+        self.model_.geom_friction[geom_id, 0] = float(sliding_friction)
+        mujoco.mj_setConst(self.model_, self.data_)
+        mujoco.mj_forward(self.model_, self.data_)
+        return {
+            'mass': float(self.model_.body_mass[body_id]),
+            'com': self.model_.body_ipos[body_id].copy(),
+            'inertia': self.model_.body_inertia[body_id].copy(),
+            'friction': self.model_.geom_friction[geom_id].copy(),
+        }
 
     # forward kinematics of allegro hand
     def allegro_fd_fn(self):
