@@ -20,7 +20,11 @@ class MjSimulator():
         self.set_goal(self.param_.target_p_, self.param_.target_q_)
         self.reset_mj_env()
 
-        self.viewer_ = mujoco.viewer.launch_passive(self.model_, self.data_, key_callback=self.keyboardCallback)
+        self.headless_ = bool(getattr(self.param_, 'headless_', False))
+        if self.headless_:
+            self.viewer_ = None
+        else:
+            self.viewer_ = mujoco.viewer.launch_passive(self.model_, self.data_, key_callback=self.keyboardCallback)
 
     def keyboardCallback(self, keycode):
         if chr(keycode) == ' ':
@@ -60,7 +64,8 @@ class MjSimulator():
             control = -100 * dpos - 2 * dvel - fingertipM @ np.tile(self.model_.opt.gravity, 3)
             self.data_.ctrl[:] = control
             mujoco.mj_step(self.model_, self.data_, nstep=1)
-            self.viewer_.sync()
+            if self.viewer_ is not None:
+                self.viewer_.sync()
             fts_dpos.append(dpos)
 
     def get_state(self):
@@ -73,3 +78,8 @@ class MjSimulator():
             self.model_.body('goal').quat = goal_quat
         mujoco.mj_forward(self.model_, self.data_)
         pass
+
+    def apply_object_plant_mismatch(self, com_offset, inertia_scale, sliding_friction):
+        from utils.plant_mismatch import apply_object_plant_mismatch
+        return apply_object_plant_mismatch(
+            self.model_, self.data_, com_offset, inertia_scale, sliding_friction)

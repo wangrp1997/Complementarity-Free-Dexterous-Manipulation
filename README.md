@@ -116,18 +116,20 @@ runs the example of Allegro hand on-palm reorientation with Standford bunny obje
 | ``` mjpython examples/mpc/allegro/****/test.py ``` 	                             | - ```airplane``` <br> - ```binoculars``` <br> - ```bowl``` <br> - ```bunny``` <br> - ```camera``` <br> - ```can``` <br> - ```cube``` <br> - ```cup``` <br> - ```elephant``` <br> - ```foambrick``` <br> - ```mug``` <br> - ```piggy_bank``` <br> - ```rubber_duck``` <br> - ```stick``` <br> - ```teapot``` <br> - ```torus``` <br> - ```water_bottle``` <br> 	                                   |
 
 
-### Unknown-dynamics baseline (Allegro cube only)
+### Unknown-dynamics + success-rate eval
 
-MPC 参数不动，只改仿真里物体的质心、惯量、摩擦（质量不改）。成功标准与原文一致：四元数误差连续 20 步 `< 0.04`。
+所有 Allegro / TriFinger / 指尖脚本都接了同一套评测。MPC 参数不动，只改仿真里物体的质心、惯量、摩擦（质量不改）。`--headless` 批量跑，`--unknown-dyn` 开失配，`--trials` 默认 20。
 
 ```shell
-python examples/mpc/allegro/cube/test.py --headless
-python examples/mpc/allegro/cube/test.py --headless --unknown-dyn
+python examples/mpc/allegro/mug/test.py --headless
+python examples/mpc/allegro/mug/test.py --headless --unknown-dyn
+python examples/mpc/trifinger/water_bottle/test.py --headless --unknown-dyn
+python examples/mpc/fingertips/cube/test-air.py --headless --unknown-dyn
 ```
 
-`--unknown-dyn` 植物体：COM `[8, -6, 4]` mm，惯量缩放 `[2.5, 4.0, 1.5]`，滑动摩擦 `0.5 → 0.2`。
+`--unknown-dyn` 植物体：COM `[4, -3, 2]` mm，惯量缩放 `[1.8, 2.0, 1.5]`，滑动摩擦 `0.5 → 0.3`。成功标准与各原文脚本一致（Allegro 只看四元数；TriFinger / 指尖还看位置）。
 
-本地 20 trial：原文设定 **20/20 = 100%**，未知动力学 **10/20 = 50%**。
+Allegro cube 本地 20 trial：原文设定 **20/20 = 100%**，较现实失配 **14/20 = 70%**。
 
 ---
 

@@ -109,23 +109,9 @@ class MjSimulator():
         pass
 
     def apply_object_plant_mismatch(self, com_offset, inertia_scale, sliding_friction):
-        """Shift only the MuJoCo object plant. MPC params stay unchanged."""
-        body_id = self.model_.body('obj').id
-        geom_id = self.model_.geom('obj').id
-        # compiled as a simple/sameframe body; COM offset breaks that assumption
-        self.model_.body_simple[body_id] = 0
-        self.model_.body_sameframe[body_id] = 0
-        self.model_.body_ipos[body_id] = np.asarray(com_offset, dtype=float)
-        self.model_.body_inertia[body_id] = self.model_.body_inertia[body_id] * np.asarray(inertia_scale, dtype=float)
-        self.model_.geom_friction[geom_id, 0] = float(sliding_friction)
-        mujoco.mj_setConst(self.model_, self.data_)
-        mujoco.mj_forward(self.model_, self.data_)
-        return {
-            'mass': float(self.model_.body_mass[body_id]),
-            'com': self.model_.body_ipos[body_id].copy(),
-            'inertia': self.model_.body_inertia[body_id].copy(),
-            'friction': self.model_.geom_friction[geom_id].copy(),
-        }
+        from utils.plant_mismatch import apply_object_plant_mismatch
+        return apply_object_plant_mismatch(
+            self.model_, self.data_, com_offset, inertia_scale, sliding_friction)
 
     # forward kinematics of allegro hand
     def allegro_fd_fn(self):

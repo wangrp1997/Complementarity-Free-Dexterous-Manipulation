@@ -114,7 +114,8 @@ class Contact:
         # fill the phi_vec
         phi_vec = np.ones((self.param_.max_ncon_ * 4,))  # this is very,very important for soft sensitivity analysis
         jac_mat = np.zeros((self.param_.max_ncon_ * 4, self.param_.n_qvel_))
-        for i in range(len(con_phi_list)):
+        n_keep = min(len(con_phi_list), self.param_.max_ncon_)
+        for i in range(n_keep):
             phi_vec[4 * i: 4 * i + 4] = con_phi_list[i]
             jac_mat[4 * i: 4 * i + 4] = con_jac_list[i]
 
