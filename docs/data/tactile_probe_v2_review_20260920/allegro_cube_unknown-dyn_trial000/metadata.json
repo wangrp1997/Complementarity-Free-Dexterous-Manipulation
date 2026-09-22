@@ -1,0 +1,793 @@
+{
+  "schema_version": 2,
+  "object": "cube",
+  "mode": "unknown-dyn",
+  "trial": 0,
+  "protocol": "paired",
+  "rows": 30,
+  "paired_snapshots": 0,
+  "stop_reason": "max_steps",
+  "initial_state": [
+    -0.038748827365273485,
+    -0.00828659798336249,
+    0.04,
+    0.9929791059250134,
+    0.0,
+    0.0,
+    -0.11828987782714598,
+    0.125,
+    1.13,
+    1.45,
+    1.24,
+    -0.02,
+    0.445,
+    1.17,
+    1.5,
+    -0.459,
+    1.54,
+    1.11,
+    1.23,
+    0.638,
+    1.85,
+    1.5,
+    1.26
+  ],
+  "initial_state_order": "object_position(3), object_quaternion_wxyz(4), hand_joint_positions(16)",
+  "mujoco_version": "3.13.0",
+  "model_path": "envs/xmls/env_allegro_cube.xml",
+  "physics_timestep": 0.002,
+  "frame_skip": 50,
+  "control_interval": 0.1,
+  "action": "16 joint target increments in rad; target = current hand qpos + action",
+  "state_observation": "ideal noiseless visual object pose and hand joint encoders; pose taken from simulation",
+  "tactile_schema": {
+    "version": "virtual_tactile_v2",
+    "tactile_columns": [
+      "active",
+      "weighted_position_object_x",
+      "weighted_position_object_y",
+      "weighted_position_object_z",
+      "weighted_normal_object_x",
+      "weighted_normal_object_y",
+      "weighted_normal_object_z",
+      "force_object_x",
+      "force_object_y",
+      "force_object_z",
+      "torque_about_object_origin_x",
+      "torque_about_object_origin_y",
+      "torque_about_object_origin_z",
+      "summed_normal_load"
+    ],
+    "contact_record_columns": [
+      "finger",
+      "position_object_x",
+      "position_object_y",
+      "position_object_z",
+      "normal_object_x",
+      "normal_object_y",
+      "normal_object_z",
+      "force_object_x",
+      "force_object_y",
+      "force_object_z",
+      "torque_at_contact_object_x",
+      "torque_at_contact_object_y",
+      "torque_at_contact_object_z",
+      "normal_force"
+    ],
+    "finger_geoms": [
+      "fingertip0",
+      "fingertip1",
+      "fingertip2",
+      "fingertip3"
+    ],
+    "object_geoms": [
+      "obj"
+    ],
+    "vector_frame": "object rigid-body/CAD registration frame, body origin, not COM",
+    "force_sign": "force and contact torque exerted on object; normal points into object",
+    "aggregate_torque": "sum(position_object cross force_object + torque_at_contact_object)",
+    "aggregation": "position and normal weighted by normal force; mean normal not renormalized",
+    "fingertip_positions_frame": "world",
+    "fingertip_positions_object_frame": "object body/CAD registration frame",
+    "units": {
+      "position": "m",
+      "force": "N",
+      "torque": "N m"
+    },
+    "active_contact": "efc_address >= 0 and normal_force > 1e-08 N",
+    "sensor_model": "ideal noiseless point contact force/position sensing, only fingertip0..3",
+    "observation_evaluation": "mj_forward on complete independent MjData copy at current plant state",
+    "limitations": [
+      "No tactile image, measured area, slip flag, or friction estimate is provided.",
+      "Discrete simulator contact count is diagnostic, not a required real-sensor feature.",
+      "All records are retained; contact discretization is simulator dependent.",
+      "Normals and local contact moments assume ideal sensing; real sensor capability needs validation.",
+      "Samples are at control boundaries, not necessarily at every physics step."
+    ],
+    "diagnostics_not_controller_inputs": [
+      "n_object_contacts",
+      "n_fingertip_contacts",
+      "n_palm_contacts",
+      "n_other_object_contacts"
+    ]
+  },
+  "contact_record_columns": [
+    "finger",
+    "position_object_x",
+    "position_object_y",
+    "position_object_z",
+    "normal_object_x",
+    "normal_object_y",
+    "normal_object_z",
+    "force_object_x",
+    "force_object_y",
+    "force_object_z",
+    "torque_at_contact_object_x",
+    "torque_at_contact_object_y",
+    "torque_at_contact_object_z",
+    "normal_force"
+  ],
+  "diagnostic_input_fields": [
+    "solver_status",
+    "source_step",
+    "pair_id",
+    "probe_joint",
+    "probe_sign",
+    "probe_epsilon",
+    "base_action",
+    "action_perturbation"
+  ],
+  "labels": {
+    "access": "evaluation-only; not controller input",
+    "integration_state": "mj_getState(mjSTATE_INTEGRATION), MuJoCo-defined state layout, includes controls and warmstart",
+    "integration_state_spec": 16383,
+    "integration_state_size": 250,
+    "integration_state_fields": [
+      {
+        "name": "mjSTATE_TIME",
+        "offset": 0,
+        "size": 1
+      },
+      {
+        "name": "mjSTATE_QPOS",
+        "offset": 1,
+        "size": 23
+      },
+      {
+        "name": "mjSTATE_QVEL",
+        "offset": 24,
+        "size": 22
+      },
+      {
+        "name": "mjSTATE_ACT",
+        "offset": 46,
+        "size": 0
+      },
+      {
+        "name": "mjSTATE_HISTORY",
+        "offset": 46,
+        "size": 0
+      },
+      {
+        "name": "mjSTATE_WARMSTART",
+        "offset": 46,
+        "size": 22
+      },
+      {
+        "name": "mjSTATE_CTRL",
+        "offset": 68,
+        "size": 16
+      },
+      {
+        "name": "mjSTATE_QFRC_APPLIED",
+        "offset": 84,
+        "size": 22
+      },
+      {
+        "name": "mjSTATE_XFRC_APPLIED",
+        "offset": 106,
+        "size": 144
+      },
+      {
+        "name": "mjSTATE_EQ_ACTIVE",
+        "offset": 250,
+        "size": 0
+      },
+      {
+        "name": "mjSTATE_MOCAP_POS",
+        "offset": 250,
+        "size": 0
+      },
+      {
+        "name": "mjSTATE_MOCAP_QUAT",
+        "offset": 250,
+        "size": 0
+      },
+      {
+        "name": "mjSTATE_USERDATA",
+        "offset": 250,
+        "size": 0
+      },
+      {
+        "name": "mjSTATE_PLUGIN",
+        "offset": 250,
+        "size": 0
+      }
+    ],
+    "contact_truth_columns": [
+      "geom1",
+      "geom2",
+      "distance",
+      "normal_force",
+      "friction_0",
+      "friction_1",
+      "friction_2",
+      "friction_3",
+      "friction_4"
+    ],
+    "n_ground_contacts": "loaded object contacts with a plane geom; separate from palm/other counts",
+    "rotation_delta_rad": "SO(3) geodesic angle between before and after object orientations"
+  },
+  "physical_parameters": {
+    "access": "evaluation-only; never required controller inputs",
+    "object_bodies": [
+      {
+        "id": 23,
+        "name": "obj",
+        "mass": 0.1,
+        "com_body": [
+          0.004,
+          -0.003,
+          0.002
+        ],
+        "inertia_principal": [
+          7.500000000000002e-05,
+          8.333333333333336e-05,
+          6.250000000000001e-05
+        ],
+        "inertia_frame_quaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "geom_friction": [
+      {
+        "id": 0,
+        "name": "floor",
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "priority": 0
+      },
+      {
+        "id": 2,
+        "name": "palm",
+        "friction": [
+          0.5,
+          0.005,
+          0.0001
+        ],
+        "priority": 0
+      },
+      {
+        "id": 4,
+        "name": "ff_base",
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "priority": 0
+      },
+      {
+        "id": 6,
+        "name": "ff_proximal",
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "priority": 0
+      },
+      {
+        "id": 8,
+        "name": "ff_medial",
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "priority": 0
+      },
+      {
+        "id": 10,
+        "name": "ff_distal",
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "priority": 0
+      },
+      {
+        "id": 12,
+        "name": "fingertip0",
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "priority": 0
+      },
+      {
+        "id": 14,
+        "name": "mf_base",
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "priority": 0
+      },
+      {
+        "id": 16,
+        "name": "mf_proximal",
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "priority": 0
+      },
+      {
+        "id": 18,
+        "name": "mf_medial",
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "priority": 0
+      },
+      {
+        "id": 20,
+        "name": "mf_distal",
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "priority": 0
+      },
+      {
+        "id": 22,
+        "name": "fingertip1",
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "priority": 0
+      },
+      {
+        "id": 24,
+        "name": "rf_base",
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "priority": 0
+      },
+      {
+        "id": 26,
+        "name": "rf_proximal",
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "priority": 0
+      },
+      {
+        "id": 28,
+        "name": "rf_medial",
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "priority": 0
+      },
+      {
+        "id": 30,
+        "name": "rf_distal",
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "priority": 0
+      },
+      {
+        "id": 32,
+        "name": "fingertip2",
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "priority": 0
+      },
+      {
+        "id": 34,
+        "name": "th_base",
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "priority": 0
+      },
+      {
+        "id": 36,
+        "name": "th_proximal",
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "priority": 0
+      },
+      {
+        "id": 38,
+        "name": "th_medial",
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "priority": 0
+      },
+      {
+        "id": 40,
+        "name": "th_distal",
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "priority": 0
+      },
+      {
+        "id": 42,
+        "name": "fingertip3",
+        "friction": [
+          1.0,
+          0.005,
+          0.0001
+        ],
+        "priority": 0
+      },
+      {
+        "id": 45,
+        "name": "obj",
+        "friction": [
+          0.3,
+          0.005,
+          0.0001
+        ],
+        "priority": 0
+      }
+    ],
+    "friction_note": "Object geom friction alone is not the effective pair friction. Actual contact.friction is saved in labels.",
+    "mismatch_note": "unknown-dyn uses one fixed COM assignment/inertia scaling/object geom friction change; mass is unchanged"
+  },
+  "success": {
+    "sustained_success_step": -1,
+    "required_consecutive_steps": 21,
+    "criterion": "FREE Allegro quaternion error 1-dot(q,target)^2 < 0.04; orientation only",
+    "scope": "baseline branch diagnostic only; short probe collection is not success-rate evaluation"
+  },
+  "probe_settings": {
+    "joints_requested": [
+      1,
+      13
+    ],
+    "epsilons_rad": [
+      0.002,
+      0.004
+    ],
+    "min_active_fingers": 2,
+    "snapshot_copy": "complete mj_copyData, including controls/time/warmstart",
+    "bound_policy": "both signs at all radii must fit action, joint-target and actuator control limits; no probe clipping",
+    "qualification": "finite snapshot, unit object quaternion, min active fingertips, no plane contact, joint and target limits"
+  },
+  "solver_attempts": [
+    {
+      "source_step": 0,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 1,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 2,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 3,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 4,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 5,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 6,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 7,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 8,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 9,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 10,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 11,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 12,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 13,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 14,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 15,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 16,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 17,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 18,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 19,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 20,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 21,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 22,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 23,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 24,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 25,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 26,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 27,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 28,
+      "status": "Solve_Succeeded",
+      "executed": true
+    },
+    {
+      "source_step": 29,
+      "status": "Solve_Succeeded",
+      "executed": true
+    }
+  ],
+  "rejected_snapshots": [
+    {
+      "source_step": 0,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 1,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 2,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 3,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 4,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 5,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 6,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 7,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 8,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 9,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 10,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 11,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 12,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 13,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 14,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 15,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 16,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 17,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 18,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 19,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 20,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 21,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 22,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 23,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 24,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 25,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 26,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 27,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 28,
+      "reason": "insufficient_fingertip_contacts"
+    },
+    {
+      "source_step": 29,
+      "reason": "insufficient_fingertip_contacts"
+    }
+  ],
+  "limitations": [
+    "FREE is an action source, not a guaranteed-safe controller.",
+    "Warmup FREE actions are not probe-qualified; their transitions are retained with pair_id=-1, not paired probe rows.",
+    "No offline model training or learned controller is performed.",
+    "One-step replay from identical physical state diagnoses local response; it is not an online method.",
+    "One fixed mismatch is not broad unknown-dynamics coverage.",
+    "Inputs and labels are separate files, but applications must explicitly restrict allowed features."
+  ]
+}

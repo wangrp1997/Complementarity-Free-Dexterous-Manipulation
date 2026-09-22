@@ -1,0 +1,13 @@
+{
+  "branch": "research/tactile-state-model",
+  "existing_files_checked": 346,
+  "changed_existing_files": [],
+  "original_research_plan_sha256": "9ef0a3f6bfe36b4602e8d0ff7422cec726c6007ffcf405ac0ac477cacc5f32d5",
+  "source_sha256": {
+    "ours/tactile_observation.py": "332f731ee59836008b925531ffa9cb10951ebd4d31818b1c53c89355050a3c8c",
+    "examples/mpc/ours/collect_tactile_dataset.py": "05efd599b42ccea25ab76a5e7d984ab559d3500a7d35f9bdf7e2b46679d341ba",
+    "examples/mpc/ours/check_tactile_observation.py": "52e583afbddcfb4f71b57a62b9f720e9007b692e519c331754b6f53d82f4bd5d",
+    "examples/mpc/ours/analyze_tactile_probes.py": "22bba6496b9d3843e1e20b25fb8d0bd2eb9040e883c44effcca02f5998cb276a"
+  },
+  "known_execution_issue": "One startup attempt exited 139 before output directory creation, without traceback; not reproduced by --help or subsequent full run with -X faulthandler -u. Cause unresolved."
+}

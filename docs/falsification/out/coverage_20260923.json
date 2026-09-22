@@ -1,0 +1,2366 @@
+{
+  "check": "coverage",
+  "scale": "state_snapshot",
+  "convention": "CONVENTIONS.md@2026-09-22",
+  "uses": "none",
+  "n_frames_included": 167,
+  "n_frames_undetermined_excluded": 0,
+  "epsilon_x": 0.001,
+  "thresholds": {
+    "1e-08": {
+      "value": 1e-08,
+      "provenance": "\u89c2\u5bdf\u5668\u53e3\u5f84 1e-8 N \u53ca \u00d7100 / \u00d710^4 \u7c97\u6863"
+    },
+    "1e-06": {
+      "value": 1e-06,
+      "provenance": "\u89c2\u5bdf\u5668\u53e3\u5f84 1e-8 N \u53ca \u00d7100 / \u00d710^4 \u7c97\u6863"
+    },
+    "0.0001": {
+      "value": 0.0001,
+      "provenance": "\u89c2\u5bdf\u5668\u53e3\u5f84 1e-8 N \u53ca \u00d7100 / \u00d710^4 \u7c97\u6863"
+    }
+  },
+  "verdict": "pass",
+  "caveats": [
+    "\u5019\u9009\u751f\u6210\u4f7f\u7528\u771f\u503c\u7269\u4f53\u4f4d\u59ff\uff08\u8bb0\u5f55 state \u4e2d\u7684 object pose\uff09\u2192 PRIVILEGED\uff1b\u90e8\u7f72\u65f6\u7269\u4f53\u4f4d\u59ff\u6765\u81ea\u89c6\u89c9\u4f30\u8ba1\uff0c\u672c\u95f8\u95e8\u672a\u68c0\u9a8c\u4f4d\u59ff\u8bef\u5dee\u5bf9\u8986\u76d6\u7387\u7684\u5f71\u54cd\u3002",
+    "\u5019\u9009\u751f\u6210\u4e0e\u771f\u503c\u540c\u6e90\uff1a\u4e24\u8005\u90fd\u6765\u81ea MuJoCo \u78b0\u649e\u68c0\u6d4b \u2192 \u8986\u76d6\u7387 100% \u8fd1\u4e4e\u540c\u4e49\u53cd\u590d\u3002\u672c\u95f8\u95e8\u7684\u975e\u5e73\u51e1\u5185\u5bb9\u53ea\u6709\u4e24\u9879\uff1a\u5019\u9009\u96c6\u5927\u5c0f\u4e0e\u8bef\u62a5\u7387\u3002",
+    "\u672a\u4f7f\u7528\u4efb\u4f55\u72ec\u7acb\u51e0\u4f55\u5b9e\u73b0\uff08\u5982\u89e3\u6790 mesh \u8ddd\u79bb\uff09\u4ea4\u53c9\u9a8c\u8bc1\uff1b\u8981\u628a\u672c\u95f8\u95e8\u53d8\u6210\u771f\u68c0\u9a8c\uff0c\u5fc5\u987b\u7528\u4e0e\u88ab\u6d4b\u4eff\u771f\u5668\u4e0d\u540c\u6e90\u7684\u51e0\u4f55\u6a21\u578b\u91cd\u505a\u3002",
+    "\u6837\u672c\u4e3a 6 episode \u7684 167 \u4e2a\u57fa\u51c6\u5e27\uff08probe_sign == 0\uff09\uff0c\u4e0d\u662f\u5168\u90e8 183 \u884c\u3002",
+    "scale \u58f0\u660e\u4e3a state_snapshot\uff1a\u672c\u68c0\u67e5\u4e0d\u8bc4\u4f30\u4efb\u4f55\u65f6\u95f4\u5c3a\u5ea6\u4e0a\u7684\u8fd0\u52a8\u5b66\u5173\u7cfb\uff0c\u6545 CONVENTIONS \u00a72 \u7684 single_step|eps_probe \u4e8c\u5206\u7c7b\u4e0d\u9002\u7528\uff08\u8be5\u4e8c\u5206\u7c7b\u662f\u4e3a\u521a\u6027\u63a5\u89e6\u5173\u7cfb\u8bbe\u7684\uff09\u3002\u6b64\u4e3a\u5224\u636e\u7ea7\u4e8b\u9879\uff0c\u9700\u4e3b agent \u51b3\u5b9a\u662f\u5426\u5728 \u00a72 \u589e\u8865\u7b2c\u4e09\u7c7b\u3002"
+  ],
+  "records": [
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 0,
+      "n_candidates": 2,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 1,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 2,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 3,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|th_base",
+        "obj|th_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 4,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "fingertip2|obj",
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 5,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "fingertip2|obj",
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 6,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 7,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 8,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 9,
+      "n_candidates": 4,
+      "n_truth": 4,
+      "covered": true,
+      "candidates": [
+        "fingertip1|obj",
+        "obj|palm",
+        "obj|th_distal",
+        "obj|th_medial"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 10,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "fingertip2|obj",
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 11,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 12,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 13,
+      "n_candidates": 5,
+      "n_truth": 5,
+      "covered": true,
+      "candidates": [
+        "ff_distal|obj",
+        "fingertip0|obj",
+        "obj|palm",
+        "obj|th_base",
+        "obj|th_medial"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 14,
+      "n_candidates": 4,
+      "n_truth": 4,
+      "covered": true,
+      "candidates": [
+        "ff_distal|obj",
+        "fingertip2|obj",
+        "obj|palm",
+        "obj|th_medial"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 15,
+      "n_candidates": 4,
+      "n_truth": 4,
+      "covered": true,
+      "candidates": [
+        "ff_distal|obj",
+        "obj|palm",
+        "obj|th_distal",
+        "obj|th_medial"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 16,
+      "n_candidates": 4,
+      "n_truth": 4,
+      "covered": true,
+      "candidates": [
+        "ff_distal|obj",
+        "obj|palm",
+        "obj|th_distal",
+        "obj|th_medial"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 17,
+      "n_candidates": 5,
+      "n_truth": 5,
+      "covered": true,
+      "candidates": [
+        "ff_distal|obj",
+        "obj|palm",
+        "obj|rf_base",
+        "obj|th_distal",
+        "obj|th_medial"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 18,
+      "n_candidates": 5,
+      "n_truth": 5,
+      "covered": true,
+      "candidates": [
+        "ff_distal|obj",
+        "fingertip2|obj",
+        "obj|palm",
+        "obj|th_distal",
+        "obj|th_medial"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 19,
+      "n_candidates": 5,
+      "n_truth": 5,
+      "covered": true,
+      "candidates": [
+        "ff_distal|obj",
+        "obj|palm",
+        "obj|rf_base",
+        "obj|th_distal",
+        "obj|th_medial"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 20,
+      "n_candidates": 4,
+      "n_truth": 4,
+      "covered": true,
+      "candidates": [
+        "ff_distal|obj",
+        "fingertip2|obj",
+        "obj|palm",
+        "obj|th_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 21,
+      "n_candidates": 5,
+      "n_truth": 5,
+      "covered": true,
+      "candidates": [
+        "ff_distal|obj",
+        "fingertip1|obj",
+        "obj|palm",
+        "obj|rf_base",
+        "obj|th_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 22,
+      "n_candidates": 4,
+      "n_truth": 4,
+      "covered": true,
+      "candidates": [
+        "ff_distal|obj",
+        "fingertip2|obj",
+        "obj|palm",
+        "obj|th_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 23,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "ff_distal|obj",
+        "fingertip1|obj",
+        "obj|th_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 24,
+      "n_candidates": 4,
+      "n_truth": 4,
+      "covered": true,
+      "candidates": [
+        "ff_distal|obj",
+        "fingertip2|obj",
+        "obj|rf_base",
+        "obj|th_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 25,
+      "n_candidates": 5,
+      "n_truth": 5,
+      "covered": true,
+      "candidates": [
+        "ff_distal|obj",
+        "fingertip1|obj",
+        "obj|palm",
+        "obj|rf_base",
+        "obj|th_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 26,
+      "n_candidates": 5,
+      "n_truth": 5,
+      "covered": true,
+      "candidates": [
+        "ff_distal|obj",
+        "fingertip2|obj",
+        "mf_proximal|obj",
+        "obj|rf_base",
+        "obj|th_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 27,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "mf_proximal|obj",
+        "obj|th_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 28,
+      "n_candidates": 6,
+      "n_truth": 6,
+      "covered": true,
+      "candidates": [
+        "fingertip2|obj",
+        "fingertip3|obj",
+        "mf_proximal|obj",
+        "obj|rf_base",
+        "obj|rf_proximal",
+        "obj|th_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "row": 29,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "fingertip2|obj",
+        "obj|th_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 0,
+      "n_candidates": 2,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 1,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 2,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 3,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "fingertip2|obj",
+        "obj|palm",
+        "obj|th_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 4,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 5,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 6,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 7,
+      "n_candidates": 4,
+      "n_truth": 4,
+      "covered": true,
+      "candidates": [
+        "fingertip2|obj",
+        "obj|palm",
+        "obj|th_distal",
+        "obj|th_medial"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 8,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 9,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "fingertip1|obj",
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 10,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "fingertip2|obj",
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 11,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 12,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 13,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|th_base",
+        "obj|th_medial"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 14,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "ff_distal|obj",
+        "fingertip0|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 15,
+      "n_candidates": 4,
+      "n_truth": 4,
+      "covered": true,
+      "candidates": [
+        "fingertip2|obj",
+        "obj|palm",
+        "obj|th_distal",
+        "obj|th_medial"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 16,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "ff_distal|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 17,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|th_distal",
+        "obj|th_medial"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 18,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "ff_distal|obj",
+        "fingertip1|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 19,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|th_distal",
+        "obj|th_medial"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 20,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "fingertip2|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 21,
+      "n_candidates": 4,
+      "n_truth": 4,
+      "covered": true,
+      "candidates": [
+        "ff_distal|obj",
+        "obj|palm",
+        "obj|th_distal",
+        "obj|th_medial"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 22,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|rf_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 23,
+      "n_candidates": 4,
+      "n_truth": 4,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|rf_base",
+        "obj|th_distal",
+        "obj|th_medial"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 24,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "fingertip2|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 25,
+      "n_candidates": 5,
+      "n_truth": 5,
+      "covered": true,
+      "candidates": [
+        "ff_distal|obj",
+        "fingertip1|obj",
+        "obj|palm",
+        "obj|th_distal",
+        "obj|th_medial"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 26,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "mf_base|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 27,
+      "n_candidates": 4,
+      "n_truth": 4,
+      "covered": true,
+      "candidates": [
+        "mf_base|obj",
+        "obj|palm",
+        "obj|th_distal",
+        "obj|th_medial"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 28,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "mf_base|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "row": 29,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "mf_base|obj",
+        "obj|th_distal",
+        "obj|th_medial"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 0,
+      "n_candidates": 3,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "fingertip1|obj",
+        "mf_base|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 1,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "ff_distal|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 2,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 3,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 4,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 5,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 6,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "fingertip3|obj",
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 7,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 8,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "fingertip1|obj",
+        "fingertip3|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 13,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "fingertip1|obj",
+        "fingertip3|obj"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 14,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "fingertip3|obj",
+        "obj|palm",
+        "obj|rf_medial"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 15,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "mf_base|obj"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 16,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "fingertip3|obj",
+        "obj|palm",
+        "obj|rf_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 17,
+      "n_candidates": 5,
+      "n_truth": 5,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "fingertip1|obj",
+        "mf_base|obj",
+        "obj|palm",
+        "obj|rf_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 18,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "fingertip3|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 19,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|rf_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 20,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 21,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "fingertip3|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 22,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|rf_medial"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 23,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "mf_base|obj",
+        "obj|palm",
+        "obj|rf_medial"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 24,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "fingertip1|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 25,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "fingertip3|obj",
+        "obj|palm",
+        "obj|rf_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 26,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 27,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 28,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "obj|palm",
+        "obj|rf_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 29,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "fingertip3|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 30,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|rf_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 31,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 32,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "row": 33,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_unknown-dyn_trial000",
+      "row": 0,
+      "n_candidates": 3,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "fingertip1|obj",
+        "mf_base|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_unknown-dyn_trial000",
+      "row": 1,
+      "n_candidates": 4,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "ff_distal|obj",
+        "ff_medial|obj",
+        "fingertip0|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_unknown-dyn_trial000",
+      "row": 2,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|rf_medial"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_unknown-dyn_trial000",
+      "row": 3,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|rf_proximal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_unknown-dyn_trial000",
+      "row": 4,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "ff_distal|obj",
+        "obj|palm",
+        "obj|rf_proximal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_unknown-dyn_trial000",
+      "row": 5,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "obj|rf_proximal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_unknown-dyn_trial000",
+      "row": 6,
+      "n_candidates": 6,
+      "n_truth": 5,
+      "covered": true,
+      "candidates": [
+        "fingertip1|obj",
+        "mf_base|obj",
+        "obj|palm",
+        "obj|rf_distal",
+        "obj|rf_medial",
+        "obj|rf_proximal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_unknown-dyn_trial000",
+      "row": 7,
+      "n_candidates": 6,
+      "n_truth": 6,
+      "covered": true,
+      "candidates": [
+        "fingertip1|obj",
+        "mf_base|obj",
+        "obj|palm",
+        "obj|rf_distal",
+        "obj|rf_medial",
+        "obj|rf_proximal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_unknown-dyn_trial000",
+      "row": 8,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "fingertip1|obj",
+        "fingertip3|obj",
+        "obj|rf_proximal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_unknown-dyn_trial000",
+      "row": 9,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "fingertip1|obj",
+        "fingertip3|obj",
+        "obj|rf_proximal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_unknown-dyn_trial000",
+      "row": 10,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "fingertip1|obj",
+        "fingertip3|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_unknown-dyn_trial000",
+      "row": 11,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "fingertip1|obj",
+        "fingertip3|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_unknown-dyn_trial000",
+      "row": 12,
+      "n_candidates": 5,
+      "n_truth": 5,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "fingertip1|obj",
+        "fingertip3|obj",
+        "mf_base|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_unknown-dyn_trial000",
+      "row": 17,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "mf_base|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_unknown-dyn_trial000",
+      "row": 18,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "fingertip1|obj",
+        "mf_base|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_unknown-dyn_trial000",
+      "row": 19,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "mf_base|obj",
+        "obj|palm",
+        "obj|rf_medial"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_mug_unknown-dyn_trial000",
+      "row": 20,
+      "n_candidates": 4,
+      "n_truth": 4,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "fingertip3|obj",
+        "obj|palm",
+        "obj|rf_medial"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 0,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 1,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 2,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 3,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 4,
+      "n_candidates": 5,
+      "n_truth": 5,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "fingertip2|obj",
+        "obj|palm",
+        "obj|rf_medial",
+        "obj|rf_proximal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 5,
+      "n_candidates": 5,
+      "n_truth": 5,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "fingertip2|obj",
+        "obj|palm",
+        "obj|rf_proximal",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 6,
+      "n_candidates": 4,
+      "n_truth": 4,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "fingertip2|obj",
+        "obj|palm",
+        "obj|rf_proximal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 7,
+      "n_candidates": 4,
+      "n_truth": 4,
+      "covered": true,
+      "candidates": [
+        "fingertip2|obj",
+        "fingertip3|obj",
+        "obj|palm",
+        "obj|rf_proximal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 12,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 13,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 14,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 15,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|rf_proximal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 16,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|th_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 17,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 18,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 19,
+      "n_candidates": 4,
+      "n_truth": 4,
+      "covered": true,
+      "candidates": [
+        "fingertip2|obj",
+        "obj|palm",
+        "obj|th_base",
+        "obj|th_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 20,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 21,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|th_base",
+        "obj|th_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 22,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|th_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 23,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 24,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|th_base",
+        "obj|th_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 25,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 26,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "fingertip2|obj",
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 27,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 28,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|th_base",
+        "obj|th_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 29,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 30,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 31,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 32,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "fingertip2|obj",
+        "fingertip3|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "row": 33,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 0,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 1,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 2,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 3,
+      "n_candidates": 4,
+      "n_truth": 4,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "fingertip2|obj",
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 4,
+      "n_candidates": 4,
+      "n_truth": 4,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "fingertip2|obj",
+        "obj|palm",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 5,
+      "n_candidates": 5,
+      "n_truth": 5,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "fingertip2|obj",
+        "obj|palm",
+        "obj|rf_proximal",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 6,
+      "n_candidates": 5,
+      "n_truth": 5,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "fingertip2|obj",
+        "obj|palm",
+        "obj|rf_proximal",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 7,
+      "n_candidates": 4,
+      "n_truth": 4,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "fingertip2|obj",
+        "obj|palm",
+        "obj|rf_proximal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 8,
+      "n_candidates": 5,
+      "n_truth": 5,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "fingertip2|obj",
+        "obj|palm",
+        "obj|rf_proximal",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 9,
+      "n_candidates": 4,
+      "n_truth": 4,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "obj|palm",
+        "obj|rf_proximal",
+        "obj|th_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 10,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "obj|palm",
+        "obj|th_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 11,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "fingertip3|obj"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 12,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "fingertip3|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 13,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "fingertip3|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 14,
+      "n_candidates": 4,
+      "n_truth": 4,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "fingertip3|obj",
+        "obj|palm",
+        "obj|th_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 15,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "obj|palm",
+        "obj|th_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 16,
+      "n_candidates": 3,
+      "n_truth": 3,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "obj|palm",
+        "obj|th_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 17,
+      "n_candidates": 4,
+      "n_truth": 4,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "fingertip3|obj",
+        "obj|palm",
+        "obj|th_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 18,
+      "n_candidates": 4,
+      "n_truth": 4,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "obj|palm",
+        "obj|rf_base",
+        "obj|th_distal"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 19,
+      "n_candidates": 2,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm",
+        "obj|rf_base"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 20,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "fingertip0|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 21,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 22,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 23,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "fingertip3|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 24,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 25,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 26,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 27,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 28,
+      "n_candidates": 2,
+      "n_truth": 2,
+      "covered": true,
+      "candidates": [
+        "fingertip3|obj",
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "row": 29,
+      "n_candidates": 1,
+      "n_truth": 1,
+      "covered": true,
+      "candidates": [
+        "obj|palm"
+      ],
+      "missed": [],
+      "undetermined": false
+    }
+  ],
+  "summary": {
+    "n_frames": 167,
+    "n_frames_covered": 167,
+    "n_frames_missed": 0,
+    "coverage_rate": 1.0,
+    "candidate_set_size_histogram": {
+      "1": 33,
+      "2": 50,
+      "3": 42,
+      "4": 24,
+      "5": 15,
+      "6": 3
+    },
+    "candidate_instances": 448,
+    "extra_instances_not_load_bearing": 7,
+    "false_positive_rate": 0.015625,
+    "top_extra_pairs": {
+      "obj|th_base": 2,
+      "mf_base|obj": 2,
+      "fingertip0|obj": 1,
+      "obj|rf_distal": 1,
+      "obj|rf_base": 1
+    },
+    "missed_pairs": {},
+    "load_threshold_sensitivity": {
+      "1e-08": {
+        "verdict": "pass",
+        "n_frames": 167,
+        "n_frames_missed": 0,
+        "load_threshold_N": 1e-08,
+        "provenance": "\u89c2\u5bdf\u5668\u53e3\u5f84 1e-8 N \u53ca \u00d7100 / \u00d710^4 \u7c97\u6863"
+      },
+      "1e-06": {
+        "verdict": "pass",
+        "n_frames": 167,
+        "n_frames_missed": 0,
+        "load_threshold_N": 1e-06,
+        "provenance": "\u89c2\u5bdf\u5668\u53e3\u5f84 1e-8 N \u53ca \u00d7100 / \u00d710^4 \u7c97\u6863"
+      },
+      "0.0001": {
+        "verdict": "pass",
+        "n_frames": 167,
+        "n_frames_missed": 0,
+        "load_threshold_N": 0.0001,
+        "provenance": "\u89c2\u5bdf\u5668\u53e3\u5f84 1e-8 N \u53ca \u00d7100 / \u00d710^4 \u7c97\u6863"
+      }
+    }
+  }
+}

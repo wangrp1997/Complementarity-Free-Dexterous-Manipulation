@@ -1,0 +1,638 @@
+[
+  {
+    "source_step": 0,
+    "n_true": 2,
+    "n_other": 1,
+    "dq_norm": 1.6190344304517772,
+    "x_norm": 0.4195012842701847,
+    "H_true": {
+      "nrows": 8,
+      "rank": 3,
+      "null_dim": 3,
+      "consistency": 0.3240408243909598,
+      "consistency_rel": 1.8402644720112868,
+      "adequacy": 1.7676417972717915
+    },
+    "H_add": {
+      "nrows": 12,
+      "rank": 5,
+      "null_dim": 1,
+      "consistency": 0.3557005471809515,
+      "consistency_rel": 2.017824182352914,
+      "adequacy": 2.998138967815298
+    },
+    "drop_one": [
+      {
+        "k": 0,
+        "nrows": 4,
+        "rank": 3,
+        "null_dim": 3,
+        "consistency": 0.22913146430812692,
+        "consistency_rel": 1.8402644720112868,
+        "adequacy": 1.767641797271791
+      },
+      {
+        "k": 1,
+        "nrows": 4,
+        "rank": 3,
+        "null_dim": 3,
+        "consistency": 0.22913146430812692,
+        "consistency_rel": 1.8402644720112868,
+        "adequacy": 1.767641797271791
+      }
+    ],
+    "normal_only": {
+      "nrows": 2,
+      "rank": 1,
+      "null_dim": 5,
+      "consistency": 0.16161192175767236,
+      "consistency_rel": 2.561590080776476,
+      "adequacy": 1.6403729200833326
+    }
+  },
+  {
+    "source_step": 1,
+    "n_true": 3,
+    "n_other": 0,
+    "dq_norm": 1.425034901993907,
+    "x_norm": 0.5732959778694526,
+    "H_true": {
+      "nrows": 12,
+      "rank": 6,
+      "null_dim": 0,
+      "consistency": 0.0918070117184105,
+      "consistency_rel": 1.6955444152539603,
+      "adequacy": 1.5514232209283354
+    },
+    "H_add": null,
+    "drop_one": [
+      {
+        "k": 0,
+        "nrows": 8,
+        "rank": 5,
+        "null_dim": 1,
+        "consistency": 0.07382026096292625,
+        "consistency_rel": 1.3633548120723713,
+        "adequacy": 1.5267711308693455
+      },
+      {
+        "k": 1,
+        "nrows": 8,
+        "rank": 5,
+        "null_dim": 1,
+        "consistency": 0.05700423060261311,
+        "consistency_rel": 1.0527867429185391,
+        "adequacy": 1.5403140250668637
+      },
+      {
+        "k": 2,
+        "nrows": 8,
+        "rank": 5,
+        "null_dim": 1,
+        "consistency": 0.09032243113478679,
+        "consistency_rel": 90322431134.78679,
+        "adequacy": 1.0
+      }
+    ],
+    "normal_only": {
+      "nrows": 3,
+      "rank": 3,
+      "null_dim": 3,
+      "consistency": 0.0718076524044692,
+      "consistency_rel": 4.818392549415122,
+      "adequacy": 1.14171793510677
+    }
+  },
+  {
+    "source_step": 2,
+    "n_true": 2,
+    "n_other": 0,
+    "dq_norm": 1.4977219680686642,
+    "x_norm": 0.6373130672110568,
+    "H_true": {
+      "nrows": 8,
+      "rank": 5,
+      "null_dim": 1,
+      "consistency": 0.05921563613753025,
+      "consistency_rel": 1.0459784541967991,
+      "adequacy": 0.9329302795008984
+    },
+    "H_add": null,
+    "drop_one": [
+      {
+        "k": 0,
+        "nrows": 4,
+        "rank": 3,
+        "null_dim": 3,
+        "consistency": 0.023722210011933385,
+        "consistency_rel": 0.4190264966635686,
+        "adequacy": 0.3136867229491186
+      },
+      {
+        "k": 1,
+        "nrows": 4,
+        "rank": 3,
+        "null_dim": 3,
+        "consistency": 0.05425632051035258,
+        "consistency_rel": 54256320510.352585,
+        "adequacy": 1.0
+      }
+    ],
+    "normal_only": {
+      "nrows": 2,
+      "rank": 2,
+      "null_dim": 4,
+      "consistency": 0.041382822342442165,
+      "consistency_rel": 2.6962662297386735,
+      "adequacy": 1.715697652865762
+    }
+  },
+  {
+    "source_step": 3,
+    "n_true": 4,
+    "n_other": 0,
+    "dq_norm": 1.9012342310056731,
+    "x_norm": 0.5671616673049535,
+    "H_true": {
+      "nrows": 16,
+      "rank": 6,
+      "null_dim": 0,
+      "consistency": 0.14417040827446329,
+      "consistency_rel": 0.9874463700344976,
+      "adequacy": 1.852525553453464
+    },
+    "H_add": null,
+    "drop_one": [
+      {
+        "k": 0,
+        "nrows": 12,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 0.1391456155624991,
+        "consistency_rel": 0.9530307546319318,
+        "adequacy": 2.622581848878198
+      },
+      {
+        "k": 1,
+        "nrows": 12,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 0.13479896307693134,
+        "consistency_rel": 0.9232598309725891,
+        "adequacy": 4.22635136171077
+      },
+      {
+        "k": 2,
+        "nrows": 12,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 0.1437022651158413,
+        "consistency_rel": 1.0927360698057624,
+        "adequacy": 2.1632593464808885
+      },
+      {
+        "k": 3,
+        "nrows": 12,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 0.06459656407093219,
+        "consistency_rel": 1.0184490389881424,
+        "adequacy": 1.4426776758612125
+      }
+    ],
+    "normal_only": {
+      "nrows": 4,
+      "rank": 4,
+      "null_dim": 2,
+      "consistency": 0.05953434136578405,
+      "consistency_rel": 2.405739417079573,
+      "adequacy": 1.749545594285334
+    }
+  },
+  {
+    "source_step": 4,
+    "n_true": 3,
+    "n_other": 0,
+    "dq_norm": 3.0396422232965197,
+    "x_norm": 3.1516142685752087,
+    "H_true": {
+      "nrows": 12,
+      "rank": 6,
+      "null_dim": 0,
+      "consistency": 0.29574641296471776,
+      "consistency_rel": 1.0044064184460249,
+      "adequacy": 0.8325908110175928
+    },
+    "H_add": null,
+    "drop_one": [
+      {
+        "k": 0,
+        "nrows": 8,
+        "rank": 5,
+        "null_dim": 1,
+        "consistency": 0.2742903603908746,
+        "consistency_rel": 0.9315379203849703,
+        "adequacy": 0.8513184973754183
+      },
+      {
+        "k": 1,
+        "nrows": 8,
+        "rank": 5,
+        "null_dim": 1,
+        "consistency": 0.11284897809851287,
+        "consistency_rel": 3.027121057384536,
+        "adequacy": 0.8641300225305298
+      },
+      {
+        "k": 2,
+        "nrows": 8,
+        "rank": 5,
+        "null_dim": 1,
+        "consistency": 0.2948928413877832,
+        "consistency_rel": 1.0096320984313638,
+        "adequacy": 1.3151827226598978
+      }
+    ],
+    "normal_only": {
+      "nrows": 3,
+      "rank": 3,
+      "null_dim": 3,
+      "consistency": 0.11903875919639388,
+      "consistency_rel": 1.5680348132727826,
+      "adequacy": 2.2791017866087953
+    }
+  },
+  {
+    "source_step": 5,
+    "n_true": 8,
+    "n_other": 0,
+    "dq_norm": 2.7265837797237826,
+    "x_norm": 2.5759311184718277,
+    "H_true": {
+      "nrows": 32,
+      "rank": 6,
+      "null_dim": 0,
+      "consistency": 0.4912046995540024,
+      "consistency_rel": 1.3940648494598942,
+      "adequacy": 0.8728445570641514
+    },
+    "H_add": null,
+    "drop_one": [
+      {
+        "k": 0,
+        "nrows": 28,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 0.4687484834008636,
+        "consistency_rel": 1.3303329234026136,
+        "adequacy": 0.908958913161367
+      },
+      {
+        "k": 1,
+        "nrows": 28,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 0.42676984705622384,
+        "consistency_rel": 1.211195338991355,
+        "adequacy": 0.9148368348694552
+      },
+      {
+        "k": 2,
+        "nrows": 28,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 0.47271474768366734,
+        "consistency_rel": 1.3415893906663539,
+        "adequacy": 0.8298844886029819
+      },
+      {
+        "k": 3,
+        "nrows": 28,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 0.4911711603300693,
+        "consistency_rel": 1.3939696633731042,
+        "adequacy": 0.9647297386706114
+      },
+      {
+        "k": 4,
+        "nrows": 28,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 0.48444625315823586,
+        "consistency_rel": 1.3748840220658327,
+        "adequacy": 0.8861662067167644
+      },
+      {
+        "k": 5,
+        "nrows": 28,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 0.42407839806946046,
+        "consistency_rel": 1.6956498840351644,
+        "adequacy": 0.8985216953453725
+      },
+      {
+        "k": 6,
+        "nrows": 28,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 0.42407839806946046,
+        "consistency_rel": 1.6956498840351644,
+        "adequacy": 0.8985216953453725
+      },
+      {
+        "k": 7,
+        "nrows": 28,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 0.47753038224344324,
+        "consistency_rel": 1.3604402200444463,
+        "adequacy": 0.8027960315394769
+      }
+    ],
+    "normal_only": {
+      "nrows": 8,
+      "rank": 5,
+      "null_dim": 1,
+      "consistency": 0.2590264550730862,
+      "consistency_rel": 2.312542586719854,
+      "adequacy": 1.0020949636752605
+    }
+  },
+  {
+    "source_step": 6,
+    "n_true": 5,
+    "n_other": 0,
+    "dq_norm": 1.036822008790262,
+    "x_norm": 0.009533497564605637,
+    "H_true": {
+      "nrows": 20,
+      "rank": 6,
+      "null_dim": 0,
+      "consistency": 0.0017103955063893148,
+      "consistency_rel": 1710395506.389315,
+      "adequacy": 1.0
+    },
+    "H_add": null,
+    "drop_one": [
+      {
+        "k": 0,
+        "nrows": 16,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 0.0016820767374126177,
+        "consistency_rel": 1682076737.4126177,
+        "adequacy": 1.0
+      },
+      {
+        "k": 1,
+        "nrows": 16,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 0.001397571380238511,
+        "consistency_rel": 1397571380.238511,
+        "adequacy": 1.0
+      },
+      {
+        "k": 2,
+        "nrows": 16,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 0.0011220247161193072,
+        "consistency_rel": 1122024716.1193073,
+        "adequacy": 1.0
+      },
+      {
+        "k": 3,
+        "nrows": 16,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 0.0016656589995158776,
+        "consistency_rel": 1665658999.5158777,
+        "adequacy": 1.0
+      },
+      {
+        "k": 4,
+        "nrows": 16,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 0.0016987830566172202,
+        "consistency_rel": 1698783056.6172202,
+        "adequacy": 1.0
+      }
+    ],
+    "normal_only": {
+      "nrows": 5,
+      "rank": 3,
+      "null_dim": 3,
+      "consistency": 0.0008553629352754603,
+      "consistency_rel": 855362935.2754604,
+      "adequacy": 1.0
+    }
+  },
+  {
+    "source_step": 7,
+    "n_true": 5,
+    "n_other": 0,
+    "dq_norm": 1.086975871701613,
+    "x_norm": 0.0002648734373676727,
+    "H_true": {
+      "nrows": 20,
+      "rank": 6,
+      "null_dim": 0,
+      "consistency": 5.1290643731838185e-05,
+      "consistency_rel": 51290643.73183819,
+      "adequacy": 1.0
+    },
+    "H_add": null,
+    "drop_one": [
+      {
+        "k": 0,
+        "nrows": 16,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 5.011407215450646e-05,
+        "consistency_rel": 50114072.15450646,
+        "adequacy": 1.0
+      },
+      {
+        "k": 1,
+        "nrows": 16,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 4.167831449476923e-05,
+        "consistency_rel": 41678314.49476923,
+        "adequacy": 1.0
+      },
+      {
+        "k": 2,
+        "nrows": 16,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 3.491436588541143e-05,
+        "consistency_rel": 34914365.885411434,
+        "adequacy": 1.0
+      },
+      {
+        "k": 3,
+        "nrows": 16,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 4.980544376073086e-05,
+        "consistency_rel": 49805443.76073086,
+        "adequacy": 1.0
+      },
+      {
+        "k": 4,
+        "nrows": 16,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 5.074271610083292e-05,
+        "consistency_rel": 50742716.10083292,
+        "adequacy": 1.0
+      }
+    ],
+    "normal_only": {
+      "nrows": 5,
+      "rank": 3,
+      "null_dim": 3,
+      "consistency": 2.5649577629534388e-05,
+      "consistency_rel": 25649577.62953439,
+      "adequacy": 1.0
+    }
+  },
+  {
+    "source_step": 8,
+    "n_true": 5,
+    "n_other": 0,
+    "dq_norm": 1.0258538416954575,
+    "x_norm": 7.393909184069692e-06,
+    "H_true": {
+      "nrows": 20,
+      "rank": 6,
+      "null_dim": 0,
+      "consistency": 1.5518793170524794e-06,
+      "consistency_rel": 1551879.3170524794,
+      "adequacy": 1.0
+    },
+    "H_add": null,
+    "drop_one": [
+      {
+        "k": 0,
+        "nrows": 16,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 1.5055725092473664e-06,
+        "consistency_rel": 1505572.5092473663,
+        "adequacy": 1.0
+      },
+      {
+        "k": 1,
+        "nrows": 16,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 1.2565286507073703e-06,
+        "consistency_rel": 1256528.6507073704,
+        "adequacy": 1.0
+      },
+      {
+        "k": 2,
+        "nrows": 16,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 1.0929626540042765e-06,
+        "consistency_rel": 1092962.6540042765,
+        "adequacy": 1.0
+      },
+      {
+        "k": 3,
+        "nrows": 16,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 1.5024951028104981e-06,
+        "consistency_rel": 1502495.102810498,
+        "adequacy": 1.0
+      },
+      {
+        "k": 4,
+        "nrows": 16,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 1.52828201949561e-06,
+        "consistency_rel": 1528282.01949561,
+        "adequacy": 1.0
+      }
+    ],
+    "normal_only": {
+      "nrows": 5,
+      "rank": 3,
+      "null_dim": 3,
+      "consistency": 7.760732366420313e-07,
+      "consistency_rel": 776073.2366420312,
+      "adequacy": 1.0
+    }
+  },
+  {
+    "source_step": 9,
+    "n_true": 4,
+    "n_other": 0,
+    "dq_norm": 3.1112136103906094,
+    "x_norm": 0.6553264837196165,
+    "H_true": {
+      "nrows": 16,
+      "rank": 6,
+      "null_dim": 0,
+      "consistency": 0.364458234172498,
+      "consistency_rel": 1.0601450243402062,
+      "adequacy": 9.724721773551545
+    },
+    "H_add": null,
+    "drop_one": [
+      {
+        "k": 0,
+        "nrows": 12,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 0.36440620962757125,
+        "consistency_rel": 1.0599936940716697,
+        "adequacy": 7.703180922222964
+      },
+      {
+        "k": 1,
+        "nrows": 12,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 0.12128369508594805,
+        "consistency_rel": 0.6570165625677692,
+        "adequacy": 4.081142427431092
+      },
+      {
+        "k": 2,
+        "nrows": 12,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 0.3543474043829651,
+        "consistency_rel": 1.1125242405133584,
+        "adequacy": 9.409496494231405
+      },
+      {
+        "k": 3,
+        "nrows": 12,
+        "rank": 6,
+        "null_dim": 0,
+        "consistency": 0.35415492382095576,
+        "consistency_rel": 1.1152173192606916,
+        "adequacy": 9.349752117677642
+      }
+    ],
+    "normal_only": {
+      "nrows": 4,
+      "rank": 4,
+      "null_dim": 2,
+      "consistency": 0.1493302959454336,
+      "consistency_rel": 1.2236313294036816,
+      "adequacy": 33.13539279785026
+    }
+  }
+]

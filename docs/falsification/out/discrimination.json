@@ -1,0 +1,656 @@
+[
+  {
+    "source_step": 0,
+    "n_true_contacts": 2,
+    "n_other_detected": 1,
+    "H_true": {
+      "nrows": 8,
+      "rank": 3,
+      "consistency": 2.873880097657179,
+      "adequacy": 1.0024211826805498,
+      "mu": null
+    },
+    "H_true_plus_other": {
+      "nrows": 12,
+      "rank": 5,
+      "consistency": 2.76033149784549,
+      "adequacy": 1.9235534558011798,
+      "mu": null
+    },
+    "drop_one_contact": [
+      {
+        "dropped": 0,
+        "nrows": 4,
+        "rank": 3,
+        "consistency": 2.873880097657179,
+        "adequacy": 1.0024211826805498,
+        "mu": null
+      },
+      {
+        "dropped": 1,
+        "nrows": 4,
+        "rank": 3,
+        "consistency": 2.873880097657179,
+        "adequacy": 1.0024211826805498,
+        "mu": null
+      }
+    ],
+    "free_one_contact_tangents": [
+      {
+        "freed": 0,
+        "nrows": 5,
+        "rank": 3,
+        "consistency": 3.038253947134863,
+        "adequacy": 1.0024211826805498,
+        "mu": null
+      },
+      {
+        "freed": 1,
+        "nrows": 5,
+        "rank": 3,
+        "consistency": 3.038253947134863,
+        "adequacy": 1.0024211826805498,
+        "mu": null
+      }
+    ]
+  },
+  {
+    "source_step": 1,
+    "n_true_contacts": 3,
+    "n_other_detected": 0,
+    "H_true": {
+      "nrows": 12,
+      "rank": 6,
+      "consistency": 0.7049118083442455,
+      "adequacy": 2.417821688006658,
+      "mu": null
+    },
+    "H_true_plus_other": null,
+    "drop_one_contact": [
+      {
+        "dropped": 0,
+        "nrows": 8,
+        "rank": 5,
+        "consistency": 0.562979182959244,
+        "adequacy": 2.4879310602696783,
+        "mu": null
+      },
+      {
+        "dropped": 1,
+        "nrows": 8,
+        "rank": 5,
+        "consistency": 0.45348518182168,
+        "adequacy": 2.0267417300422714,
+        "mu": null
+      },
+      {
+        "dropped": 2,
+        "nrows": 8,
+        "rank": 5,
+        "consistency": 5070845217.586577,
+        "adequacy": 1.0,
+        "mu": null
+      }
+    ],
+    "free_one_contact_tangents": [
+      {
+        "freed": 0,
+        "nrows": 9,
+        "rank": 6,
+        "consistency": 0.6406384276237248,
+        "adequacy": 2.871582084714421,
+        "mu": null
+      },
+      {
+        "freed": 1,
+        "nrows": 9,
+        "rank": 6,
+        "consistency": 0.6210848799375878,
+        "adequacy": 3.0142543175801015,
+        "mu": null
+      },
+      {
+        "freed": 2,
+        "nrows": 9,
+        "rank": 6,
+        "consistency": 2.535311253456211,
+        "adequacy": 2.0697586824037306,
+        "mu": null
+      }
+    ]
+  },
+  {
+    "source_step": 2,
+    "n_true_contacts": 2,
+    "n_other_detected": 0,
+    "H_true": {
+      "nrows": 8,
+      "rank": 5,
+      "consistency": 0.41753186590032454,
+      "adequacy": 0.9621942571032365,
+      "mu": null
+    },
+    "H_true_plus_other": null,
+    "drop_one_contact": [
+      {
+        "dropped": 0,
+        "nrows": 4,
+        "rank": 3,
+        "consistency": 0.09668916597293602,
+        "adequacy": 0.9929966985378035,
+        "mu": null
+      },
+      {
+        "dropped": 1,
+        "nrows": 4,
+        "rank": 3,
+        "consistency": 2981497012.7141113,
+        "adequacy": 1.0,
+        "mu": null
+      }
+    ],
+    "free_one_contact_tangents": [
+      {
+        "freed": 0,
+        "nrows": 5,
+        "rank": 4,
+        "consistency": 0.2719777379708741,
+        "adequacy": 1.3188170684835887,
+        "mu": null
+      },
+      {
+        "freed": 1,
+        "nrows": 5,
+        "rank": 4,
+        "consistency": 1.5282889478030475,
+        "adequacy": 1.3320050184437262,
+        "mu": null
+      }
+    ]
+  },
+  {
+    "source_step": 3,
+    "n_true_contacts": 4,
+    "n_other_detected": 0,
+    "H_true": {
+      "nrows": 16,
+      "rank": 6,
+      "consistency": 1.0483385262934755,
+      "adequacy": 2.2585213389436154,
+      "mu": null
+    },
+    "H_true_plus_other": null,
+    "drop_one_contact": [
+      {
+        "dropped": 0,
+        "nrows": 12,
+        "rank": 6,
+        "consistency": 1.0243080006424452,
+        "adequacy": 3.003800766160414,
+        "mu": null
+      },
+      {
+        "dropped": 1,
+        "nrows": 12,
+        "rank": 6,
+        "consistency": 0.9919114604313107,
+        "adequacy": 4.454115664244821,
+        "mu": null
+      },
+      {
+        "dropped": 2,
+        "nrows": 12,
+        "rank": 6,
+        "consistency": 1.1723847165374652,
+        "adequacy": 2.5417345471536903,
+        "mu": null
+      },
+      {
+        "dropped": 3,
+        "nrows": 12,
+        "rank": 6,
+        "consistency": 0.912547538707188,
+        "adequacy": 1.4724171758671498,
+        "mu": null
+      }
+    ],
+    "free_one_contact_tangents": [
+      {
+        "freed": 0,
+        "nrows": 13,
+        "rank": 6,
+        "consistency": 1.0357225339385465,
+        "adequacy": 2.524268508395796,
+        "mu": null
+      },
+      {
+        "freed": 1,
+        "nrows": 13,
+        "rank": 6,
+        "consistency": 1.0305391193164117,
+        "adequacy": 2.918514973243997,
+        "mu": null
+      },
+      {
+        "freed": 2,
+        "nrows": 13,
+        "rank": 6,
+        "consistency": 1.162724244192981,
+        "adequacy": 2.5574743619818863,
+        "mu": null
+      },
+      {
+        "freed": 3,
+        "nrows": 13,
+        "rank": 6,
+        "consistency": 1.0166389276622505,
+        "adequacy": 1.5037195338889948,
+        "mu": null
+      }
+    ]
+  },
+  {
+    "source_step": 4,
+    "n_true_contacts": 3,
+    "n_other_detected": 0,
+    "H_true": {
+      "nrows": 12,
+      "rank": 6,
+      "consistency": 0.8003403489381058,
+      "adequacy": 0.6712150114001296,
+      "mu": null
+    },
+    "H_true_plus_other": null,
+    "drop_one_contact": [
+      {
+        "dropped": 0,
+        "nrows": 8,
+        "rank": 5,
+        "consistency": 0.5669720032905693,
+        "adequacy": 0.7579467817692986,
+        "mu": null
+      },
+      {
+        "dropped": 1,
+        "nrows": 8,
+        "rank": 5,
+        "consistency": 1.5596712926087613,
+        "adequacy": 0.8053836106258249,
+        "mu": null
+      },
+      {
+        "dropped": 2,
+        "nrows": 8,
+        "rank": 5,
+        "consistency": 0.7644032824121926,
+        "adequacy": 1.078162959827272,
+        "mu": null
+      }
+    ],
+    "free_one_contact_tangents": [
+      {
+        "freed": 0,
+        "nrows": 9,
+        "rank": 6,
+        "consistency": 0.5793676580359621,
+        "adequacy": 0.5376127722228659,
+        "mu": null
+      },
+      {
+        "freed": 1,
+        "nrows": 9,
+        "rank": 6,
+        "consistency": 1.3805337884887179,
+        "adequacy": 0.8034480592547136,
+        "mu": null
+      },
+      {
+        "freed": 2,
+        "nrows": 9,
+        "rank": 6,
+        "consistency": 0.8540409157391095,
+        "adequacy": 0.6326875739744359,
+        "mu": null
+      }
+    ]
+  },
+  {
+    "source_step": 5,
+    "n_true_contacts": 8,
+    "n_other_detected": 0,
+    "H_true": {
+      "nrows": 32,
+      "rank": 6,
+      "consistency": 0.8684883936138542,
+      "adequacy": 1.3857782528462819,
+      "mu": null
+    },
+    "H_true_plus_other": null,
+    "drop_one_contact": [
+      {
+        "dropped": 0,
+        "nrows": 28,
+        "rank": 6,
+        "consistency": 0.8650054805474285,
+        "adequacy": 1.4279557568682144,
+        "mu": null
+      },
+      {
+        "dropped": 1,
+        "nrows": 28,
+        "rank": 6,
+        "consistency": 0.849189251665625,
+        "adequacy": 1.7445614883960514,
+        "mu": null
+      },
+      {
+        "dropped": 2,
+        "nrows": 28,
+        "rank": 6,
+        "consistency": 0.8463669285482401,
+        "adequacy": 1.6234864628438959,
+        "mu": null
+      },
+      {
+        "dropped": 3,
+        "nrows": 28,
+        "rank": 6,
+        "consistency": 0.8682586795643933,
+        "adequacy": 1.6502406941946388,
+        "mu": null
+      },
+      {
+        "dropped": 4,
+        "nrows": 28,
+        "rank": 6,
+        "consistency": 0.8669747513866629,
+        "adequacy": 1.3670573575751952,
+        "mu": null
+      },
+      {
+        "dropped": 5,
+        "nrows": 28,
+        "rank": 6,
+        "consistency": 0.9114373661451672,
+        "adequacy": 1.0008654918352025,
+        "mu": null
+      },
+      {
+        "dropped": 6,
+        "nrows": 28,
+        "rank": 6,
+        "consistency": 0.9114373661451672,
+        "adequacy": 1.0008654918352025,
+        "mu": null
+      },
+      {
+        "dropped": 7,
+        "nrows": 28,
+        "rank": 6,
+        "consistency": 0.86996875194234,
+        "adequacy": 1.2551364516813077,
+        "mu": null
+      }
+    ],
+    "free_one_contact_tangents": [
+      {
+        "freed": 0,
+        "nrows": 29,
+        "rank": 6,
+        "consistency": 0.8650344884022146,
+        "adequacy": 1.3616652618334784,
+        "mu": null
+      },
+      {
+        "freed": 1,
+        "nrows": 29,
+        "rank": 6,
+        "consistency": 0.8538432416182573,
+        "adequacy": 1.770180864341693,
+        "mu": null
+      },
+      {
+        "freed": 2,
+        "nrows": 29,
+        "rank": 6,
+        "consistency": 0.8559252111993874,
+        "adequacy": 1.484828620359026,
+        "mu": null
+      },
+      {
+        "freed": 3,
+        "nrows": 29,
+        "rank": 6,
+        "consistency": 0.8682790071765553,
+        "adequacy": 1.6788922354227829,
+        "mu": null
+      },
+      {
+        "freed": 4,
+        "nrows": 29,
+        "rank": 6,
+        "consistency": 0.8671945244202555,
+        "adequacy": 1.341172035462058,
+        "mu": null
+      },
+      {
+        "freed": 5,
+        "nrows": 29,
+        "rank": 6,
+        "consistency": 0.9178066664871164,
+        "adequacy": 0.9811149434654148,
+        "mu": null
+      },
+      {
+        "freed": 6,
+        "nrows": 29,
+        "rank": 6,
+        "consistency": 0.9178066664871164,
+        "adequacy": 0.9811149434654147,
+        "mu": null
+      },
+      {
+        "freed": 7,
+        "nrows": 29,
+        "rank": 6,
+        "consistency": 0.8731423240056004,
+        "adequacy": 1.3617667099571915,
+        "mu": null
+      }
+    ]
+  },
+  {
+    "source_step": 6,
+    "n_true_contacts": 5,
+    "n_other_detected": 0,
+    "H_true": {
+      "nrows": 20,
+      "rank": 6,
+      "consistency": 329121910.5410489,
+      "adequacy": 1.0,
+      "mu": null
+    },
+    "H_true_plus_other": null,
+    "drop_one_contact": [
+      {
+        "dropped": 0,
+        "nrows": 16,
+        "rank": 6,
+        "consistency": 323904893.16579735,
+        "adequacy": 1.0,
+        "mu": null
+      },
+      {
+        "dropped": 1,
+        "nrows": 16,
+        "rank": 6,
+        "consistency": 268787951.06353474,
+        "adequacy": 1.0,
+        "mu": null
+      },
+      {
+        "dropped": 2,
+        "nrows": 16,
+        "rank": 6,
+        "consistency": 215040227.30421346,
+        "adequacy": 1.0,
+        "mu": null
+      },
+      {
+        "dropped": 3,
+        "nrows": 16,
+        "rank": 6,
+        "consistency": 320794434.77727956,
+        "adequacy": 1.0,
+        "mu": null
+      },
+      {
+        "dropped": 4,
+        "nrows": 16,
+        "rank": 6,
+        "consistency": 327066074.05226094,
+        "adequacy": 1.0,
+        "mu": null
+      }
+    ],
+    "free_one_contact_tangents": [
+      {
+        "freed": 0,
+        "nrows": 17,
+        "rank": 6,
+        "consistency": 325215632.978902,
+        "adequacy": 1.0,
+        "mu": null
+      },
+      {
+        "freed": 1,
+        "nrows": 17,
+        "rank": 6,
+        "consistency": 285072557.411385,
+        "adequacy": 1.0,
+        "mu": null
+      },
+      {
+        "freed": 2,
+        "nrows": 17,
+        "rank": 6,
+        "consistency": 248528623.90328336,
+        "adequacy": 1.0,
+        "mu": null
+      },
+      {
+        "freed": 3,
+        "nrows": 17,
+        "rank": 6,
+        "consistency": 322895506.1199308,
+        "adequacy": 1.0,
+        "mu": null
+      },
+      {
+        "freed": 4,
+        "nrows": 17,
+        "rank": 6,
+        "consistency": 327580309.4014139,
+        "adequacy": 1.0,
+        "mu": null
+      }
+    ]
+  },
+  {
+    "source_step": 7,
+    "n_true_contacts": 5,
+    "n_other_detected": 0,
+    "H_true": {
+      "nrows": 20,
+      "rank": 6,
+      "consistency": 10042018.48059721,
+      "adequacy": 1.0,
+      "mu": null
+    },
+    "H_true_plus_other": null,
+    "drop_one_contact": [
+      {
+        "dropped": 0,
+        "nrows": 16,
+        "rank": 6,
+        "consistency": 9825072.051265681,
+        "adequacy": 1.0,
+        "mu": null
+      },
+      {
+        "dropped": 1,
+        "nrows": 16,
+        "rank": 6,
+        "consistency": 8156572.330119701,
+        "adequacy": 1.0,
+        "mu": null
+      },
+      {
+        "dropped": 2,
+        "nrows": 16,
+        "rank": 6,
+        "consistency": 6789385.637100238,
+        "adequacy": 1.0,
+        "mu": null
+      },
+      {
+        "dropped": 3,
+        "nrows": 16,
+        "rank": 6,
+        "consistency": 9762688.834237358,
+        "adequacy": 1.0,
+        "mu": null
+      },
+      {
+        "dropped": 4,
+        "nrows": 16,
+        "rank": 6,
+        "consistency": 9944897.036479643,
+        "adequacy": 1.0,
+        "mu": null
+      }
+    ],
+    "free_one_contact_tangents": [
+      {
+        "freed": 0,
+        "nrows": 17,
+        "rank": 6,
+        "consistency": 9879732.193279102,
+        "adequacy": 1.0,
+        "mu": null
+      },
+      {
+        "freed": 1,
+        "nrows": 17,
+        "rank": 6,
+        "consistency": 8666415.518613594,
+        "adequacy": 1.0,
+        "mu": null
+      },
+      {
+        "freed": 2,
+        "nrows": 17,
+        "rank": 6,
+        "consistency": 7731833.5469762115,
+        "adequacy": 1.0,
+        "mu": null
+      },
+      {
+        "freed": 3,
+        "nrows": 17,
+        "rank": 6,
+        "consistency": 9833240.352777522,
+        "adequacy": 1.0,
+        "mu": null
+      },
+      {
+        "freed": 4,
+        "nrows": 17,
+        "rank": 6,
+        "consistency": 9969250.427059354,
+        "adequacy": 1.0,
+        "mu": null
+      }
+    ]
+  }
+]

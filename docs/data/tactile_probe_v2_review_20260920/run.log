@@ -1,0 +1,341 @@
+mpc solve time: 0.011675357818603516
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011312723159790039
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011103391647338867
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011146783828735352
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011881351470947266
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.013835906982421875
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.010297298431396484
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.010426044464111328
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.01047205924987793
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.012205123901367188
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.013012886047363281
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011259317398071289
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.01112985610961914
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.014671802520751953
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.015613794326782227
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011981964111328125
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.012180805206298828
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.014104366302490234
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.012987852096557617
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.012868881225585938
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.012772560119628906
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.0139923095703125
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.015031814575195312
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.015075206756591797
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.015891075134277344
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.014852523803710938
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.014046192169189453
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.013041019439697266
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.016443252563476562
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.015608787536621094
+mpc solve status =  Solve_Succeeded
+{"object": "cube", "mode": "nominal", "trial": 0, "rows": 30, "paired_snapshots": 0, "stop_reason": "max_steps", "path": "docs/data/tactile_probe_v2_review_20260920/allegro_cube_nominal_trial000"}
+mpc solve time: 0.011093854904174805
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011105775833129883
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.01175546646118164
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.013464689254760742
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.010162591934204102
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.010462284088134766
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.012300491333007812
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.013507843017578125
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.010631561279296875
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011506795883178711
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.01229548454284668
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.01091146469116211
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011115789413452148
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.013179779052734375
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011397361755371094
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.012540578842163086
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.010949850082397461
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011358022689819336
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.012200355529785156
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011394977569580078
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.013995885848999023
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.01394033432006836
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.014040231704711914
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.015573263168334961
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.012986898422241211
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.014882802963256836
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.01218271255493164
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011243104934692383
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.012214183807373047
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.012150287628173828
+mpc solve status =  Solve_Succeeded
+{"object": "cube", "mode": "unknown-dyn", "trial": 0, "rows": 30, "paired_snapshots": 0, "stop_reason": "max_steps", "path": "docs/data/tactile_probe_v2_review_20260920/allegro_cube_unknown-dyn_trial000"}
+mpc solve time: 0.013448953628540039
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.012146234512329102
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.008935689926147461
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.008810758590698242
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011785268783569336
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.01104426383972168
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011692047119140625
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.008805513381958008
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011644601821899414
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.013043642044067383
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011148691177368164
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.010230064392089844
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.010783195495605469
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.014070272445678711
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.009459972381591797
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.013093233108520508
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.008785724639892578
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.010934591293334961
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.008736371994018555
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.00871133804321289
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011649370193481445
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.010802030563354492
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.008753061294555664
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.008800506591796875
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.010135889053344727
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.013847827911376953
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.010191202163696289
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.008876323699951172
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.008037567138671875
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.007978200912475586
+mpc solve status =  Solve_Succeeded
+{"object": "mug", "mode": "nominal", "trial": 0, "rows": 34, "paired_snapshots": 1, "stop_reason": "max_steps", "path": "docs/data/tactile_probe_v2_review_20260920/allegro_mug_nominal_trial000"}
+mpc solve time: 0.013529777526855469
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.012667417526245117
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.01110386848449707
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.009511709213256836
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.010232686996459961
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.013833999633789062
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.010843753814697266
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.010945320129394531
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.01019430160522461
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.013133525848388672
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011754512786865234
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011597156524658203
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.01299595832824707
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.009017229080200195
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.012054443359375
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011028051376342773
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011643409729003906
+mpc solve status =  Solve_Succeeded
+{"object": "mug", "mode": "unknown-dyn", "trial": 0, "rows": 25, "paired_snapshots": 2, "stop_reason": "probe_count_reached", "path": "docs/data/tactile_probe_v2_review_20260920/allegro_mug_unknown-dyn_trial000"}
+mpc solve time: 0.012083292007446289
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.010293245315551758
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.009493112564086914
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.009502410888671875
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.014191865921020508
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.009504556655883789
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.010342836380004883
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.013921260833740234
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.008867740631103516
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.008828878402709961
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.008973121643066406
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.009693145751953125
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.01345372200012207
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.009738683700561523
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.009631872177124023
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011784553527832031
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.008744239807128906
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.010155916213989258
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.009583711624145508
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.009560108184814453
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.0111236572265625
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.00955963134765625
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011781692504882812
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.008802175521850586
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.010907649993896484
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.009567737579345703
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.009553909301757812
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.009561538696289062
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011633872985839844
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.008813858032226562
+mpc solve status =  Solve_Succeeded
+{"object": "stick", "mode": "nominal", "trial": 0, "rows": 34, "paired_snapshots": 1, "stop_reason": "max_steps", "path": "docs/data/tactile_probe_v2_review_20260920/allegro_stick_nominal_trial000"}
+mpc solve time: 0.011970281600952148
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.009784460067749023
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.010255098342895508
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.010210275650024414
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.010363340377807617
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011922597885131836
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.01103973388671875
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.010272026062011719
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011837005615234375
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.012603521347045898
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.014639139175415039
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.0124664306640625
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.01394200325012207
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011740922927856445
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.013312339782714844
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.014003276824951172
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.01318049430847168
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.012444257736206055
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.01246333122253418
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.009656429290771484
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.012506246566772461
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.008737325668334961
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.009029626846313477
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.011726140975952148
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.0087890625
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.00877523422241211
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.008736848831176758
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.008752584457397461
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.010916948318481445
+mpc solve status =  Solve_Succeeded
+mpc solve time: 0.00876617431640625
+mpc solve status =  Solve_Succeeded
+{"object": "stick", "mode": "unknown-dyn", "trial": 0, "rows": 30, "paired_snapshots": 0, "stop_reason": "max_steps", "path": "docs/data/tactile_probe_v2_review_20260920/allegro_stick_unknown-dyn_trial000"}
+{"episodes": 6, "rows": 183, "output": "docs/data/tactile_probe_v2_review_20260920"}

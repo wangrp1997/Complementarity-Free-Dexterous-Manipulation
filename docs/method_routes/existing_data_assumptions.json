@@ -1,0 +1,208 @@
+{
+  "purpose": "Read-only tests of candidate method assumptions, not fitted response models",
+  "source_dataset": "docs/data/tactile_probe_v2_review_20260920",
+  "length_scale_for_geometric_svd_m": 0.05,
+  "geometry_assumption": "Each counted point sticks in 3D; rank is conditional geometry, not evidence of sticking or force closure",
+  "residual_definition": "Transport each initial contact point as a material point on the hand and on the object using only observed q/pose and known kinematics; compare at next control boundary",
+  "residual_limit": "Includes rolling, detachment, compliance, actual slip, and discrete contact association changes; not a direct slip sensor or proof of failure at every physics step",
+  "physical_parameters_used": false,
+  "rows": [
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "pair_id": 0,
+      "source_step": 8,
+      "active_fingers": [
+        1,
+        3
+      ],
+      "contact_point_count": 8,
+      "all_point_sticking_geometry": {
+        "rank_at_1e-8": 6,
+        "singular_values": [
+          3.011684644203262,
+          2.9737616286045223,
+          2.8284271247461894,
+          1.715980970109825,
+          1.6485159521587296,
+          0.0010187117437971622
+        ]
+      },
+      "one_center_per_finger_geometry": {
+        "rank_at_1e-8": 5,
+        "singular_values": [
+          1.4771753562794219,
+          1.453936080714683,
+          1.414213562373095,
+          0.9062074285582511,
+          0.8678104615518843,
+          8.85448359078159e-18
+        ]
+      },
+      "command_norm_rad": 0.5062660116750046,
+      "actual_joint_increment_norm_rad": 0.27867303757357514,
+      "tracking_error_norm_rad": 0.2587943212142133,
+      "relative_tracking_error": 0.5111824915087234,
+      "frozen_contact_material_displacement_m": [
+        0.0082362603305838,
+        0.00823151665393275,
+        0.008241028443382608,
+        0.008240045092598585,
+        0.008232489554446805,
+        0.0047791460458663886,
+        0.004769740322685418,
+        0.0047885667464876895
+      ],
+      "max_frozen_contact_material_displacement_m": 0.008241028443382608,
+      "target_rotation_error_rad": 0.9013697584117571,
+      "finger_center_target_gradient_nullspace_fraction": 0.0567420146989843
+    },
+    {
+      "episode": "allegro_mug_unknown-dyn_trial000",
+      "pair_id": 0,
+      "source_step": 12,
+      "active_fingers": [
+        0,
+        1,
+        3
+      ],
+      "contact_point_count": 9,
+      "all_point_sticking_geometry": {
+        "rank_at_1e-8": 6,
+        "singular_values": [
+          3.3213698894606747,
+          3.2897383070740704,
+          3.000000000000001,
+          1.2781865130715981,
+          1.1386574399136695,
+          0.6166278476463201
+        ]
+      },
+      "one_center_per_finger_geometry": {
+        "rank_at_1e-8": 6,
+        "singular_values": [
+          1.826505648408878,
+          1.8129056484810868,
+          1.7320508075688772,
+          0.8758296241873593,
+          0.7507351887371093,
+          0.440951132028676
+        ]
+      },
+      "command_norm_rad": 0.3609717722926366,
+      "actual_joint_increment_norm_rad": 0.23893051079045366,
+      "tracking_error_norm_rad": 0.12527510966546188,
+      "relative_tracking_error": 0.3470496013297751,
+      "frozen_contact_material_displacement_m": [
+        0.010596308553759896,
+        0.010598764826770218,
+        0.010593852736986683,
+        0.006231865178220054,
+        0.010416800546553051,
+        0.01041593644127602,
+        0.010417665069439893,
+        0.010417372594451437,
+        0.010416228925149823
+      ],
+      "max_frozen_contact_material_displacement_m": 0.010598764826770218,
+      "target_rotation_error_rad": 0.11036560707488227,
+      "finger_center_target_gradient_nullspace_fraction": 0.0
+    },
+    {
+      "episode": "allegro_mug_unknown-dyn_trial000",
+      "pair_id": 1,
+      "source_step": 16,
+      "active_fingers": [
+        0,
+        3
+      ],
+      "contact_point_count": 8,
+      "all_point_sticking_geometry": {
+        "rank_at_1e-8": 6,
+        "singular_values": [
+          3.1712004496717126,
+          3.130671955138629,
+          2.8284271247461907,
+          1.1320017659263124,
+          1.0129273941457095,
+          0.0009264915152326197
+        ]
+      },
+      "one_center_per_finger_geometry": {
+        "rank_at_1e-8": 5,
+        "singular_values": [
+          1.5825812606401253,
+          1.560581596844339,
+          1.4142135623730951,
+          0.5863439093488813,
+          0.5240712298060926,
+          6.989466993172544e-17
+        ]
+      },
+      "command_norm_rad": 0.37661951694219115,
+      "actual_joint_increment_norm_rad": 0.21150296456690654,
+      "tracking_error_norm_rad": 0.19341672335870347,
+      "relative_tracking_error": 0.5135600112523956,
+      "frozen_contact_material_displacement_m": [
+        0.008267238220937004,
+        0.00826686276053424,
+        0.008267613220788056,
+        0.008268231686197489,
+        0.008266244295147074,
+        0.00048319605525202905,
+        0.0004835447370080095,
+        0.00048284945059756787
+      ],
+      "max_frozen_contact_material_displacement_m": 0.008268231686197489,
+      "target_rotation_error_rad": 0.11223948569389253,
+      "finger_center_target_gradient_nullspace_fraction": 0.7556711074182139
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "pair_id": 0,
+      "source_step": 7,
+      "active_fingers": [
+        2,
+        3
+      ],
+      "contact_point_count": 6,
+      "all_point_sticking_geometry": {
+        "rank_at_1e-8": 6,
+        "singular_values": [
+          3.0785141733674433,
+          3.0642536817930552,
+          2.449489742783178,
+          1.080132716442389,
+          1.0387913800721225,
+          0.0006414019135955005
+        ]
+      },
+      "one_center_per_finger_geometry": {
+        "rank_at_1e-8": 5,
+        "singular_values": [
+          1.5304985266786548,
+          1.4951769380626203,
+          1.4142135623730951,
+          0.9899749527118771,
+          0.9344403367501114,
+          1.2182015093601977e-17
+        ]
+      },
+      "command_norm_rad": 0.5098546831479077,
+      "actual_joint_increment_norm_rad": 0.31734135809228425,
+      "tracking_error_norm_rad": 0.19378326124649103,
+      "relative_tracking_error": 0.3800754757219224,
+      "frozen_contact_material_displacement_m": [
+        0.009544319115446965,
+        0.015866141983341884,
+        0.015862459360448836,
+        0.015869824219000624,
+        0.015868500271318888,
+        0.015863782970281733
+      ],
+      "max_frozen_contact_material_displacement_m": 0.015869824219000624,
+      "target_rotation_error_rad": 1.0351375064148614,
+      "finger_center_target_gradient_nullspace_fraction": 0.2381817898001004
+    }
+  ],
+  "target_ambiguity_definition": "For illustration only, project rotation-objective gradient g=(0,-Log(Rcurrent.T Rtarget)) onto nullspace of sticking H built from each finger weighted center. Centers need not be actual contacts, and sticking is not established. Positive projection means this compressed, conditional equality system cannot uniquely determine first-order task progress."
+}

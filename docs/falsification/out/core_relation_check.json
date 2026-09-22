@@ -1,0 +1,146 @@
+{
+  "episode": "allegro_cube_nominal_trial000",
+  "frames": [
+    {
+      "source_step": 0,
+      "n_contacts_in_free_rows": 3,
+      "n_true_loaded_contacts": 2,
+      "n_matched": 2,
+      "dqvel_norm_hand": 0.2067299564666053,
+      "dqvel_norm_object": 0.21365095784992783,
+      "residual_true_contacts": [
+        0.04041387111873089,
+        0.04041387111873089
+      ],
+      "residual_all_contacts": [
+        0.04041387111873089,
+        0.04041387111873089,
+        0.011619528912313314
+      ],
+      "median_residual_true": 0.04041387111873089,
+      "max_residual_true": 0.04041387111873089,
+      "rows_per_contact": 4,
+      "nv": 22
+    },
+    {
+      "source_step": 1,
+      "n_contacts_in_free_rows": 3,
+      "n_true_loaded_contacts": 3,
+      "n_matched": 3,
+      "dqvel_norm_hand": 0.155518998856625,
+      "dqvel_norm_object": 0.027713630559655023,
+      "residual_true_contacts": [
+        0.0031336940233469167,
+        0.0039866568687009505,
+        0.0011840988186689431
+      ],
+      "residual_all_contacts": [
+        0.0031336940233469167,
+        0.0039866568687009505,
+        0.0011840988186689431
+      ],
+      "median_residual_true": 0.0031336940233469167,
+      "max_residual_true": 0.0039866568687009505,
+      "rows_per_contact": 4,
+      "nv": 22
+    },
+    {
+      "source_step": 2,
+      "n_contacts_in_free_rows": 2,
+      "n_true_loaded_contacts": 2,
+      "n_matched": 2,
+      "dqvel_norm_hand": 0.15270649337765693,
+      "dqvel_norm_object": 0.043775624014787975,
+      "residual_true_contacts": [
+        0.002981497012714111,
+        0.000709726781660257
+      ],
+      "residual_all_contacts": [
+        0.002981497012714111,
+        0.000709726781660257
+      ],
+      "median_residual_true": 0.001845611897187184,
+      "max_residual_true": 0.002981497012714111,
+      "rows_per_contact": 4,
+      "nv": 22
+    },
+    {
+      "source_step": 3,
+      "n_contacts_in_free_rows": 4,
+      "n_true_loaded_contacts": 4,
+      "n_matched": 4,
+      "dqvel_norm_hand": 0.18372920112394667,
+      "dqvel_norm_object": 0.05912160547030895,
+      "residual_true_contacts": [
+        0.0032680358209025455,
+        0.004968530694862456,
+        0.001033920794769803,
+        0.014114740958947025
+      ],
+      "residual_all_contacts": [
+        0.0032680358209025455,
+        0.004968530694862456,
+        0.001033920794769803,
+        0.014114740958947025
+      ],
+      "median_residual_true": 0.0041182832578825004,
+      "max_residual_true": 0.014114740958947025,
+      "rows_per_contact": 4,
+      "nv": 22
+    },
+    {
+      "source_step": 4,
+      "n_contacts_in_free_rows": 3,
+      "n_true_loaded_contacts": 3,
+      "n_matched": 3,
+      "dqvel_norm_hand": 0.23938568168498975,
+      "dqvel_norm_object": 0.2892495249142982,
+      "residual_true_contacts": [
+        0.009539355903229825,
+        0.006465289316475391,
+        0.007062236758595321
+      ],
+      "residual_all_contacts": [
+        0.009539355903229825,
+        0.006465289316475391,
+        0.007062236758595321
+      ],
+      "median_residual_true": 0.007062236758595321,
+      "max_residual_true": 0.009539355903229825,
+      "rows_per_contact": 4,
+      "nv": 22
+    },
+    {
+      "source_step": 5,
+      "n_contacts_in_free_rows": 8,
+      "n_true_loaded_contacts": 8,
+      "n_matched": 8,
+      "dqvel_norm_hand": 0.2076702495079872,
+      "dqvel_norm_object": 0.0437680005518298,
+      "residual_true_contacts": [
+        0.0013735252130341446,
+        0.0032184294606065005,
+        0.0034429034897312306,
+        0.00035307439994202556,
+        0.0009059901544461581,
+        0.010193973059863736,
+        0.010193973059863736,
+        0.0016760971973453131
+      ],
+      "residual_all_contacts": [
+        0.0013735252130341446,
+        0.0032184294606065005,
+        0.0034429034897312306,
+        0.00035307439994202556,
+        0.0009059901544461581,
+        0.010193973059863736,
+        0.010193973059863736,
+        0.0016760971973453131
+      ],
+      "median_residual_true": 0.0024472633289759067,
+      "max_residual_true": 0.010193973059863736,
+      "rows_per_contact": 4,
+      "nv": 22
+    }
+  ]
+}

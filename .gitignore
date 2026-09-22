@@ -5,4 +5,8 @@ __pycache__/
 .Python
 .venv/
 venv/
-docs/
+
+# docs 纳入版本控制；只排除大体积二进制
+docs/literature_sources_20260922/
+docs/**/*.pdf
+.DS_Store

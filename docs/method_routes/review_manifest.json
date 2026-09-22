@@ -1,0 +1,44 @@
+{
+  "scope": "New method-route documents and read-only existing-data analysis; no controller, training, new collection or edits to existing baseline files by this task",
+  "branch": "research/tactile-state-model",
+  "files": [
+    {
+      "path": "docs/method_routes/check_existing_assumptions.py",
+      "sha256": "34ed17f982a12c31c5a70731ee19ceaabdead1c3829e235ada34d12614d23224"
+    },
+    {
+      "path": "docs/method_routes/existing_data_assumptions.json",
+      "sha256": "a4fd3ab6b189adffacf62f5672a0724e1c9f0e0044b4b263769810812e1482be"
+    },
+    {
+      "path": "docs/method_routes/review.md",
+      "sha256": "d9929ec4597e299e67440100d98e752b071998a883f81b7ab5bc59b141c9cbdb"
+    },
+    {
+      "path": "docs/method_routes/route_a_geometry.md",
+      "sha256": "6b12f711dcd5fa3cec83d92e07511efc70c64e5e279e61576575a20b4a0a3d4b"
+    },
+    {
+      "path": "docs/method_routes/route_b_contact_belief.md",
+      "sha256": "22f233b0fc9dcc70d709b19c9bb09147d8b103ac1db2bb396ff6f17f303bb4b3"
+    },
+    {
+      "path": "docs/method_routes/route_c_online_response.md",
+      "sha256": "4136c9b7ae16c302957c60ec110d886680d68981608180f6a289c1c1dd360857"
+    }
+  ],
+  "tracked_and_prior_documents_checked": 349,
+  "concurrent_existing_file_changes_observed_not_written_by_this_task": [
+    "README.md",
+    "examples/mpc/allegro/eval_results.jsonl"
+  ],
+  "original_research_plan_unchanged": true,
+  "checks": [
+    "Four prior snapshots reproduced from allowed inputs and known kinematics",
+    "Conditional task-ambiguity nullspace extrema checked numerically",
+    "Route B joint-observation information and common-feasible-space degeneracy cross-reviewed",
+    "Route C slack variables and no-forgetting information update aligned",
+    "Document math delimiters and local links checked"
+  ],
+  "versioning_note": "docs/ is ignored by current repository rules; artifacts are local and uncommitted"
+}

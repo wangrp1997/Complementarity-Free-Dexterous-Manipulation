@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "episodes": [
+    {
+      "object": "cube",
+      "mode": "nominal",
+      "trial": 0,
+      "rows": 30,
+      "paired_snapshots": 0,
+      "stop_reason": "max_steps",
+      "path": "docs/data/tactile_probe_v2_review_20260920/allegro_cube_nominal_trial000"
+    },
+    {
+      "object": "cube",
+      "mode": "unknown-dyn",
+      "trial": 0,
+      "rows": 30,
+      "paired_snapshots": 0,
+      "stop_reason": "max_steps",
+      "path": "docs/data/tactile_probe_v2_review_20260920/allegro_cube_unknown-dyn_trial000"
+    },
+    {
+      "object": "mug",
+      "mode": "nominal",
+      "trial": 0,
+      "rows": 34,
+      "paired_snapshots": 1,
+      "stop_reason": "max_steps",
+      "path": "docs/data/tactile_probe_v2_review_20260920/allegro_mug_nominal_trial000"
+    },
+    {
+      "object": "mug",
+      "mode": "unknown-dyn",
+      "trial": 0,
+      "rows": 25,
+      "paired_snapshots": 2,
+      "stop_reason": "probe_count_reached",
+      "path": "docs/data/tactile_probe_v2_review_20260920/allegro_mug_unknown-dyn_trial000"
+    },
+    {
+      "object": "stick",
+      "mode": "nominal",
+      "trial": 0,
+      "rows": 34,
+      "paired_snapshots": 1,
+      "stop_reason": "max_steps",
+      "path": "docs/data/tactile_probe_v2_review_20260920/allegro_stick_nominal_trial000"
+    },
+    {
+      "object": "stick",
+      "mode": "unknown-dyn",
+      "trial": 0,
+      "rows": 30,
+      "paired_snapshots": 0,
+      "stop_reason": "max_steps",
+      "path": "docs/data/tactile_probe_v2_review_20260920/allegro_stick_unknown-dyn_trial000"
+    }
+  ]
+}

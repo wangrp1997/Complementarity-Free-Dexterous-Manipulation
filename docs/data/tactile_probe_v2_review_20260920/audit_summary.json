@@ -1,0 +1,314 @@
+{
+  "dataset": "/home/rw/Documents/Complementarity-Free-Dexterous-Manipulation/docs/data/tactile_probe_v2_review_20260920",
+  "episodes": [
+    {
+      "episode": "allegro_cube_nominal_trial000",
+      "transitions": 30,
+      "object": "cube",
+      "mode": "nominal",
+      "trial": 0,
+      "paired_snapshots": 0,
+      "checks_passed": true,
+      "loaded_finger_observations": 18,
+      "max_per_finger_force_N": 38.99254916090712,
+      "solver_statuses": [
+        "Solve_Succeeded"
+      ],
+      "pairs": []
+    },
+    {
+      "episode": "allegro_cube_unknown-dyn_trial000",
+      "transitions": 30,
+      "object": "cube",
+      "mode": "unknown-dyn",
+      "trial": 0,
+      "paired_snapshots": 0,
+      "checks_passed": true,
+      "loaded_finger_observations": 11,
+      "max_per_finger_force_N": 41.51425438286943,
+      "solver_statuses": [
+        "Solve_Succeeded"
+      ],
+      "pairs": []
+    },
+    {
+      "episode": "allegro_mug_nominal_trial000",
+      "transitions": 34,
+      "object": "mug",
+      "mode": "nominal",
+      "trial": 0,
+      "paired_snapshots": 1,
+      "checks_passed": true,
+      "loaded_finger_observations": 25,
+      "max_per_finger_force_N": 14.044944521822499,
+      "solver_statuses": [
+        "Solve_Succeeded"
+      ],
+      "pairs": [
+        {
+          "pair_id": 0,
+          "branches": 5,
+          "derivatives": [
+            {
+              "joint": 1,
+              "epsilon_rad": 0.002,
+              "translation_derivative_m_per_rad": [
+                -0.006104192523664377,
+                0.01276500143793189,
+                0.0023870157469732404
+              ],
+              "rotation_derivative_rad_per_rad": [
+                0.16592907084712546,
+                -0.05929027313941737,
+                0.25873828709567503
+              ],
+              "translation_second_difference_m_per_rad2": 2.9027222494868985,
+              "rotation_second_difference_rad_per_rad2": 43.23129377556267,
+              "endpoint_finger_flags_differ": false
+            },
+            {
+              "joint": 1,
+              "epsilon_rad": 0.004,
+              "translation_derivative_m_per_rad": [
+                -0.005833597410402191,
+                0.016751466352989446,
+                0.0010750735377812373
+              ],
+              "rotation_derivative_rad_per_rad": [
+                0.25562079396195325,
+                -0.02880556245909993,
+                0.35532519078888825
+              ],
+              "translation_second_difference_m_per_rad2": 1.12967720468715,
+              "rotation_second_difference_rad_per_rad2": 56.110667352815675,
+              "endpoint_finger_flags_differ": true
+            }
+          ],
+          "amplitude_comparisons": [
+            {
+              "joint": 1,
+              "epsilon_rad": [
+                0.002,
+                0.004
+              ],
+              "translation_derivative_absolute_difference": 0.004205510265659307,
+              "translation_derivative_relative_difference": 0.23665398740639826,
+              "rotation_derivative_absolute_difference": 0.13528840580630566,
+              "rotation_derivative_relative_difference": 0.30840878287962853
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "episode": "allegro_mug_unknown-dyn_trial000",
+      "transitions": 25,
+      "object": "mug",
+      "mode": "unknown-dyn",
+      "trial": 0,
+      "paired_snapshots": 2,
+      "checks_passed": true,
+      "loaded_finger_observations": 38,
+      "max_per_finger_force_N": 21.191589631246234,
+      "solver_statuses": [
+        "Solve_Succeeded"
+      ],
+      "pairs": [
+        {
+          "pair_id": 0,
+          "branches": 5,
+          "derivatives": [
+            {
+              "joint": 13,
+              "epsilon_rad": 0.002,
+              "translation_derivative_m_per_rad": [
+                0.027303842039537493,
+                0.05850864434002272,
+                0.00752879422309199
+              ],
+              "rotation_derivative_rad_per_rad": [
+                -1.2990336682756412,
+                -0.2466532588473458,
+                -0.20123208856332309
+              ],
+              "translation_second_difference_m_per_rad2": 98.39680268636994,
+              "rotation_second_difference_rad_per_rad2": 2079.116218143092,
+              "endpoint_finger_flags_differ": true
+            },
+            {
+              "joint": 13,
+              "epsilon_rad": 0.004,
+              "translation_derivative_m_per_rad": [
+                0.01735911157045179,
+                0.030004408395951938,
+                0.0024782188715372464
+              ],
+              "rotation_derivative_rad_per_rad": [
+                -0.665427718644038,
+                -0.010646705538071115,
+                -0.19247295871460288
+              ],
+              "translation_second_difference_m_per_rad2": 24.955433600800685,
+              "rotation_second_difference_rad_per_rad2": 538.9786787406442,
+              "endpoint_finger_flags_differ": true
+            }
+          ],
+          "amplitude_comparisons": [
+            {
+              "joint": 13,
+              "epsilon_rad": [
+                0.002,
+                0.004
+              ],
+              "translation_derivative_absolute_difference": 0.03060878047619262,
+              "translation_derivative_relative_difference": 0.47087957386779333,
+              "rotation_derivative_absolute_difference": 0.676189555501411,
+              "rotation_derivative_relative_difference": 0.5055743799271278
+            }
+          ]
+        },
+        {
+          "pair_id": 1,
+          "branches": 5,
+          "derivatives": [
+            {
+              "joint": 13,
+              "epsilon_rad": 0.002,
+              "translation_derivative_m_per_rad": [
+                0.003649806550863198,
+                0.007563553896418459,
+                0.00027067513814517385
+              ],
+              "rotation_derivative_rad_per_rad": [
+                -0.1919228769310284,
+                0.0743058119513744,
+                -0.20281657981408646
+              ],
+              "translation_second_difference_m_per_rad2": 1.7497067372970552,
+              "rotation_second_difference_rad_per_rad2": 37.26054952967585,
+              "endpoint_finger_flags_differ": false
+            },
+            {
+              "joint": 13,
+              "epsilon_rad": 0.004,
+              "translation_derivative_m_per_rad": [
+                0.0038300027750486055,
+                0.00803230078361074,
+                0.00035507988800642654
+              ],
+              "rotation_derivative_rad_per_rad": [
+                -0.1874765206789945,
+                0.07281173981203877,
+                -0.20861535894757674
+              ],
+              "translation_second_difference_m_per_rad2": 0.38875016568582993,
+              "rotation_second_difference_rad_per_rad2": 7.722775269389537,
+              "endpoint_finger_flags_differ": false
+            }
+          ],
+          "amplitude_comparisons": [
+            {
+              "joint": 13,
+              "epsilon_rad": [
+                0.002,
+                0.004
+              ],
+              "translation_derivative_absolute_difference": 0.0005092332326766103,
+              "translation_derivative_relative_difference": 0.05718010332913673,
+              "rotation_derivative_absolute_difference": 0.00745842978893964,
+              "rotation_derivative_relative_difference": 0.02573872180345889
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "episode": "allegro_stick_nominal_trial000",
+      "transitions": 34,
+      "object": "stick",
+      "mode": "nominal",
+      "trial": 0,
+      "paired_snapshots": 1,
+      "checks_passed": true,
+      "loaded_finger_observations": 24,
+      "max_per_finger_force_N": 30.4579813063868,
+      "solver_statuses": [
+        "Solve_Succeeded"
+      ],
+      "pairs": [
+        {
+          "pair_id": 0,
+          "branches": 5,
+          "derivatives": [
+            {
+              "joint": 1,
+              "epsilon_rad": 0.002,
+              "translation_derivative_m_per_rad": [
+                7.453889935837843e-15,
+                -1.3173056395698879e-14,
+                -5.095750210681871e-15
+              ],
+              "rotation_derivative_rad_per_rad": [
+                6.140921104957897e-13,
+                1.1102230246251565e-13,
+                -4.805184028455756e-13
+              ],
+              "translation_second_difference_m_per_rad2": 2.958759719693173e-11,
+              "rotation_second_difference_rad_per_rad2": 2.1249059728044176e-09,
+              "endpoint_finger_flags_differ": false
+            },
+            {
+              "joint": 1,
+              "epsilon_rad": 0.004,
+              "translation_derivative_m_per_rad": [
+                1.1316360175317453e-15,
+                9.581636699340645e-15,
+                7.589415207398531e-15
+              ],
+              "rotation_derivative_rad_per_rad": [
+                -1.493596912816031e-12,
+                -3.122502256758253e-14,
+                -7.134050294954619e-14
+              ],
+              "translation_second_difference_m_per_rad2": 7.688527347203307e-12,
+              "rotation_second_difference_rad_per_rad2": 2.4861916588836966e-10,
+              "endpoint_finger_flags_differ": false
+            }
+          ],
+          "amplitude_comparisons": [
+            {
+              "joint": 1,
+              "epsilon_rad": [
+                0.002,
+                0.004
+              ],
+              "translation_derivative_absolute_difference": 2.6807841653908642e-14,
+              "translation_derivative_relative_difference": 0.02680784165390864,
+              "rotation_derivative_absolute_difference": 2.1517467030834923e-12,
+              "rotation_derivative_relative_difference": 1.4386933282390346
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "episode": "allegro_stick_unknown-dyn_trial000",
+      "transitions": 30,
+      "object": "stick",
+      "mode": "unknown-dyn",
+      "trial": 0,
+      "paired_snapshots": 0,
+      "checks_passed": true,
+      "loaded_finger_observations": 33,
+      "max_per_finger_force_N": 33.4798185287365,
+      "solver_statuses": [
+        "Solve_Succeeded"
+      ],
+      "pairs": []
+    }
+  ],
+  "total_transitions": 183,
+  "total_paired_snapshots": 4,
+  "initial_pose_matches_across_modes": true,
+  "interpretation": "Pipeline and local-response diagnostics only. Finite differences use cloned simulation states for evaluation; they are not available to an online controller. No claim of safe probing, Markov sufficiency, global differentiability or learned-model accuracy."
+}
