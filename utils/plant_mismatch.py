@@ -25,7 +25,13 @@ def apply_object_plant_mismatch(model, data, com_offset=None, inertia_scale=None
     for geom_id in geom_ids:
         model.geom_friction[geom_id, 0] = float(sliding_friction)
 
+    # MuJoCo 3.13 mj_setConst copies qpos0 into data.qpos. Keep the caller’s
+    # grasp / object pose so unknown-dyn only changes plant parameters.
+    spec = mujoco.mjtState.mjSTATE_INTEGRATION
+    state = np.empty(mujoco.mj_stateSize(model, spec))
+    mujoco.mj_getState(model, data, state, spec)
     mujoco.mj_setConst(model, data)
+    mujoco.mj_setState(model, data, state, spec)
     mujoco.mj_forward(model, data)
     return {
         'mass': float(model.body_mass[body_id]),

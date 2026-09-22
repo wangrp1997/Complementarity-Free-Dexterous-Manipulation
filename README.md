@@ -129,7 +129,7 @@ python examples/mpc/fingertips/cube/test-air.py --headless --unknown-dyn
 
 `--unknown-dyn` 植物体：COM `[4, -3, 2]` mm，惯量缩放 `[1.8, 2.0, 1.5]`，滑动摩擦 `0.5 → 0.3`。成功标准与各原文脚本一致（Allegro 只看四元数；TriFinger / 指尖还看位置）。
 
-Allegro cube 本地 20 trial：原文设定 **20/20 = 100%**，较现实失配 **14/20 = 70%**。
+Allegro cube 本地 20 trial：原文设定 **20/20 = 100%**，同初态下较现实失配 **20/20 = 100%**。17 物体合计原版 282/340 (82.9%)，同初态未知动力学 268/340 (78.8%)。早期 13.8% 是 `mj_setConst` 清掉抓取造成的，不能当动力学结果。
 
 ---
 
