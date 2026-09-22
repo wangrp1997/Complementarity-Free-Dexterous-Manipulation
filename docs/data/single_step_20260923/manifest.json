@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "episodes": [
+    {
+      "object": "cube",
+      "records": 300,
+      "intervals": 6,
+      "path": "docs/data/single_step_20260923/allegro_cube_nominal_trial000"
+    },
+    {
+      "object": "mug",
+      "records": 300,
+      "intervals": 6,
+      "path": "docs/data/single_step_20260923/allegro_mug_nominal_trial000"
+    },
+    {
+      "object": "stick",
+      "records": 300,
+      "intervals": 6,
+      "path": "docs/data/single_step_20260923/allegro_stick_nominal_trial000"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "object": "stick",
+  "mode": "nominal",
+  "trial": 0,
+  "n_records": 300,
+  "n_intervals_recorded": 6,
+  "substeps_per_interval": 50,
+  "stop_reason": "max_steps",
+  "mujoco_version": "3.13.0",
+  "model_path": "envs/xmls/env_allegro_stick.xml",
+  "physics_timestep": 0.002,
+  "frame_skip": 50,
+  "control_interval": 0.1,
+  "qpos_order": "hand_qpos(16), object_pos(3), object_quat_wxyz(4)",
+  "contact_row_order": "object_velocity(6), hand_velocity(16)",
+  "mu_object": 0.5,
+  "action": "16 joint target increments in rad; target = current hand qpos + action",
+  "label_fields": [
+    "forces",
+    "pairs",
+    "phi"
+  ],
+  "validation_vs_env_step": [
+    {
+      "control_step": 4,
+      "bit_identical_to_bare_mj_step": true,
+      "qpos_max_abs_diff": 0.0,
+      "qvel_max_abs_diff": 0.0,
+      "n_physics_steps": 50
+    },
+    {
+      "control_step": 5,
+      "bit_identical_to_bare_mj_step": true,
+      "qpos_max_abs_diff": 0.0,
+      "qvel_max_abs_diff": 0.0,
+      "n_physics_steps": 50
+    },
+    {
+      "control_step": 6,
+      "bit_identical_to_bare_mj_step": true,
+      "qpos_max_abs_diff": 0.0,
+      "qvel_max_abs_diff": 0.0,
+      "n_physics_steps": 50
+    },
+    {
+      "control_step": 7,
+      "bit_identical_to_bare_mj_step": true,
+      "qpos_max_abs_diff": 0.0,
+      "qvel_max_abs_diff": 0.0,
+      "n_physics_steps": 50
+    },
+    {
+      "control_step": 8,
+      "bit_identical_to_bare_mj_step": true,
+      "qpos_max_abs_diff": 0.0,
+      "qvel_max_abs_diff": 0.0,
+      "n_physics_steps": 50
+    },
+    {
+      "control_step": 9,
+      "bit_identical_to_bare_mj_step": true,
+      "qpos_max_abs_diff": 0.0,
+      "qvel_max_abs_diff": 0.0,
+      "n_physics_steps": 50
+    }
+  ],
+  "intervals": [
+    {
+      "control_step": 0,
+      "status": "Solve_Succeeded",
+      "recorded": false
+    },
+    {
+      "control_step": 1,
+      "status": "Solve_Succeeded",
+      "recorded": false
+    },
+    {
+      "control_step": 2,
+      "status": "Solve_Succeeded",
+      "recorded": false
+    },
+    {
+      "control_step": 3,
+      "status": "Solve_Succeeded",
+      "recorded": false
+    },
+    {
+      "control_step": 4,
+      "status": "Solve_Succeeded",
+      "recorded": true,
+      "n_contacts_mean": 9.44,
+      "n_active_fingers_mean": 1.98
+    },
+    {
+      "control_step": 5,
+      "status": "Solve_Succeeded",
+      "recorded": true,
+      "n_contacts_mean": 10.72,
+      "n_active_fingers_mean": 1.9
+    },
+    {
+      "control_step": 6,
+      "status": "Solve_Succeeded",
+      "recorded": true,
+      "n_contacts_mean": 9.28,
+      "n_active_fingers_mean": 1.8
+    },
+    {
+      "control_step": 7,
+      "status": "Solve_Succeeded",
+      "recorded": true,
+      "n_contacts_mean": 4.64,
+      "n_active_fingers_mean": 0.16
+    },
+    {
+      "control_step": 8,
+      "status": "Solve_Succeeded",
+      "recorded": true,
+      "n_contacts_mean": 3.76,
+      "n_active_fingers_mean": 0.0
+    },
+    {
+      "control_step": 9,
+      "status": "Solve_Succeeded",
+      "recorded": true,
+      "n_contacts_mean": 3.52,
+      "n_active_fingers_mean": 0.0
+    }
+  ],
+  "limitations": [
+    "FREE's MPC is an action source, not a certified controller.",
+    "A recorded substep is a one-step replay of the same physical state; it is not an online method.",
+    "Only nominal plant is collected; unknown-dyn is a separate question."
+  ]
+}

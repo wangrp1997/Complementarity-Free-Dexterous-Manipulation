@@ -287,3 +287,59 @@ USES: object_dynamics   或   USES: none
 - **"task-relevant"不得作为差异化的词。** Tishby 的信息瓶颈已形式化 relevant information，Bajcsy 1988 是整片领域，且该词**直接出现在 WM-Craftnet 原文里**。
 - 必须正面处理的两篇最接近工作：TANDEM（arXiv:2203.00798，触觉探索与决策联合优化，但任务是触觉物体识别）、arXiv:2210.13403（在手操作+触觉+任务驱动+探索/完成权衡，但探索的是全局物体形状，不是"会不会改变下一步动作"）。
 - 目前唯一值得写成 claim 的缝隙：**存在一类接触歧义，其区分动作在可执行动作集内不存在**（单步不可分）。这是**界**不是方法，且 L4 挂掉时自动升级为主结果。
+\n
+---
+
+## 11. 第 3 号修正：单物理步恒等式检查（新判据登记）
+
+**日期：** 2026-09-23
+**为什么：** §10.1 已判定"现有 183 行数据里没有任何一行处在模型可能有效的尺度上"，并给出前置条件：必须按单物理步重新采集。该采集已完成（`examples/mpc/ours/collect_single_step.py`，数据集 `docs/data/single_step_20260923/`）。本节登记这一新检查的判据、尺度与阈值——**先登记，后运行**。
+
+### 11.1 新增检查名与尺度
+
+- `check = "identity_single_step"`；`scale = "single_step"`（§2 的唯一有效尺度，dt = `model.opt.timestep` = 0.002 s）。
+- 脚本 `docs/falsification/check_single_physics_step.py`，**必须** `import metrics.py`（§3）；产物 `docs/falsification/out/single_physics_step.json`。
+
+### 11.2 被检验的单一命题
+
+**在被测物理步上受载的物体-手指接触，其接触点相对运动为零**，因此物体瞬时旋量由 $x = -\operatorname{pinv}(A)(J\,dq)$ 从手部位移唯一确定。这是"用刚体接触几何做可微联合优化"这一路线的全部前提；命题挂掉，该路线在本动作接口下即不成立。
+
+### 11.3 残差口径（沿用 `metrics.py`，不新增第二套定义）
+
+- `consistency = ||A x + J dq|| / ||J dq||`
+- `adequacy = ||x_pred - x_obs|| / ||x_obs||`，并**必须同时报告零旋量预测器的参照值 1.0**（只看前者无法判断是否优于"不动"）。
+
+行集必须至少报三种：`kin1_loaded`（每个受载接触只取法向行）、`kin3_loaded`（取 n/t1/t2 三行 = 粘着假设）、`jac4_loaded`（FREE 自己的 4 行 μ 混合行）。
+
+### 11.4 阈值登记（provenance 必填）
+
+| 阈值 | 值 | provenance |
+| --- | --- | --- |
+| `force_loaded_min` | 1e-6 N | `mj_contactForce` 的数值零；低于此判为未受载 |
+| consistency 判"成立" | ≤ 0.10 | 残差比约束项自身量级低一个数量级 |
+| consistency 判"不成立" | ≥ 1.00 | 残差达到或超过约束项自身量级 → 关系不再携带信息 |
+| 两者之间 | `undetermined` | §3 的第三类判定 |
+
+必须做 ×0.1 / ×1 / ×10 敏感性（§8.2）；**结论随档位翻转即结论不成立**。
+
+### 11.5 EPS_X 的单物理步折算
+
+`EPS_X_SINGLE_STEP = EPS_X / frame_skip = 1e-3 / 50 = 2e-5`。provenance：§4 判据的物理内容不变，只是同一个"近静态"判据在单物理步上的折算（单步位移 = 区间位移 / `frame_skip`）。**禁止**直接把 1e-3 用在单物理步数据上——那会把几乎所有帧判为未判定，等于用错尺度的阈值制造假象。
+
+### 11.6 两条已实测的技术事实（事实，不是判据）
+
+1. **`Contact.detect_once` 会让 `efc_address` 失效。** 它末尾的 `mj_collision` 把 `efc_address` 全部重置为 −1，因此在 `detect_once` 之后读 `mj_contactForce` **一律得到 0.0**（实测：同一状态用干净的 `mj_forward` 读到 13.79 N）。凡要读接触力的脚本，必须在干净 `mj_forward` 之后读。
+2. **`max_ncon_` 会造成静默截断。** mug/stick 的 `max_ncon_ = 15`，cube 为 20；`reformat` 按 `min(len(contacts), max_ncon_)` 填充，**超出的接触被静默丢弃且不报错**。实测 mug 有 8 个物理步发生截断。凡使用 `jac_mat` 的检查必须显式声明该截断。
+
+### 11.7 采集侧要求（已满足）
+
+- 接触量在 `MjData` **副本**上求值，记录轨迹必须与裸 `mj_step` 逐位一致；采集脚本内置断言，实测 3 物体 × 6 区间全部 `bit_identical_to_bare_mj_step = true`。
+- 相邻 `mj_step` 之间的位移用 `mj_differentiatePos(dt=1)`，与 `metrics.Episode.twist` 同口径。
+
+**本节不改动任何既有判据、阈值或结论；未改动 `metrics.py`、`falsification_spec.md`、`F0_falsification_plan.md` 或任何既有脚本。**
+
+### 11.8 补充登记：两条分层阈值（2026-09-23）
+
+1. **受载强度分层 `strong = force > 0.05 N`。** provenance：物体质量 0.01 kg → 自重 0.098 N；`0.05 N` 相当于"至少承担约一半自重的接触"。弱接触（1e-6 ~ 0.05 N）与强接触必须分开报，否则"受载"这个词同时指代 1e-6 N 与 13 N 两类东西。
+2. **分母退化帧 `||J dq|| = 0`。** 手在该物理步完全不动时 `consistency` 在构造上无定义，**不得记为 0 或 inf**：`consistency` 与 `adequacy` 记为 `nan` 并从分位数统计中剔除，单独计数并单独用绝对残差 `||A x||` 报告（此时命题退化为"手不动时物体是否也不动"）。
+3. 步内接触集稳定性必须作为诊断一起报：相邻物理步之间物体接触 geom 对集合是否不变。若接触每步都在切换，则恒等式的违反与"接触集本身在变"混杂，必须显式说明。
