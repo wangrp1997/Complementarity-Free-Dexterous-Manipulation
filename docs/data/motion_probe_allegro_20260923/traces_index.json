@@ -1,0 +1,29 @@
+[
+  {
+    "key": "ep000",
+    "hand": "allegro",
+    "object": "cube",
+    "target_type": "rotation",
+    "trial": 0,
+    "success": true,
+    "steps": 49
+  },
+  {
+    "key": "ep001",
+    "hand": "allegro",
+    "object": "cube",
+    "target_type": "rotation",
+    "trial": 1,
+    "success": true,
+    "steps": 62
+  },
+  {
+    "key": "ep002",
+    "hand": "allegro",
+    "object": "cube",
+    "target_type": "rotation",
+    "trial": 2,
+    "success": true,
+    "steps": 31
+  }
+]

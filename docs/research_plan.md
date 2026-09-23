@@ -6,7 +6,7 @@ $\boxed{\text{Tactile Exploration}\leftrightarrow\text{Geometric/Contact Belief}
 
 ### 生物学动机
 
-人类的主动触觉并不是“先感知、后操作”的串行过程。人在缺少视觉时，会主动移动手指探索物体表面，并根据接触、力和表面几何逐步形成形状认识；而且探索动作本身会随物体特征和当前感知需求发生变化。经典的 Nature 工作证明了主动触觉中的力信息能够参与形状感知；Nature Neuroscience 的研究则表明，指尖触觉神经活动能够快速编码复杂的空间接触事件。
+人类的主动触觉并不是“先感知、后操作”的串行过程。人在缺少视觉时，会主动移动手指探索物体表面，并根据接触、力和表面几何逐步形成形状认识；而且探索动作本身会随物体特征和当前感知需求发生变化。*Nature* 上的实验表明，主动触觉里力线索可以压过与之矛盾的表面几何 [Robles-De-La-Torre & Hayward, 2001](https://doi.org/10.1038/35086588)。*Nature Neuroscience* 表明，指尖传入纤维群体第一次放电的相对时刻编码力方向和接触面形状，并快到足以用于自然操作 [Johansson & Birznieks, 2004](https://doi.org/10.1038/nn1177)。*Nature Reviews Neuroscience* 把操作写成一串动作相位：每个相位预测标志子目标的接触事件，预测与实测失配就校正，并更新物体属性的记忆 [Johansson & Flanagan, 2009](https://doi.org/10.1038/nrn2621)。这三篇加上探索程序的非 Nature 出处，以及它们对本项目 \(L_{\mathrm{task}}+\lambda L_{\mathrm{info}}+\beta L_{\mathrm{safe}}\) 的对应，写在 [人类触觉机制笔记](human_haptic_mechanism.md)。该笔记里的优化对应是本项目的解释，不是上述论文的主张。
 
 所以可以抽象成：
 

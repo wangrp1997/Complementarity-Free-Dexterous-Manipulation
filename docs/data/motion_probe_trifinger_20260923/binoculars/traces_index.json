@@ -1,0 +1,29 @@
+[
+  {
+    "key": "ep000",
+    "hand": "trifinger",
+    "object": "binoculars",
+    "target_type": "rotation",
+    "trial": 0,
+    "success": true,
+    "steps": 147
+  },
+  {
+    "key": "ep001",
+    "hand": "trifinger",
+    "object": "binoculars",
+    "target_type": "rotation",
+    "trial": 1,
+    "success": true,
+    "steps": 140
+  },
+  {
+    "key": "ep002",
+    "hand": "trifinger",
+    "object": "binoculars",
+    "target_type": "rotation",
+    "trial": 2,
+    "success": true,
+    "steps": 21
+  }
+]

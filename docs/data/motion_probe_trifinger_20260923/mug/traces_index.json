@@ -1,0 +1,29 @@
+[
+  {
+    "key": "ep000",
+    "hand": "trifinger",
+    "object": "mug",
+    "target_type": "rotation",
+    "trial": 0,
+    "success": true,
+    "steps": 175
+  },
+  {
+    "key": "ep001",
+    "hand": "trifinger",
+    "object": "mug",
+    "target_type": "rotation",
+    "trial": 1,
+    "success": true,
+    "steps": 90
+  },
+  {
+    "key": "ep002",
+    "hand": "trifinger",
+    "object": "mug",
+    "target_type": "rotation",
+    "trial": 2,
+    "success": true,
+    "steps": 21
+  }
+]

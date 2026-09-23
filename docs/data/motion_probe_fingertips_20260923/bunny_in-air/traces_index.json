@@ -1,0 +1,29 @@
+[
+  {
+    "key": "ep000",
+    "hand": "fingertips",
+    "object": "bunny",
+    "target_type": "in-air",
+    "trial": 0,
+    "success": true,
+    "steps": 196
+  },
+  {
+    "key": "ep001",
+    "hand": "fingertips",
+    "object": "bunny",
+    "target_type": "in-air",
+    "trial": 1,
+    "success": true,
+    "steps": 130
+  },
+  {
+    "key": "ep002",
+    "hand": "fingertips",
+    "object": "bunny",
+    "target_type": "in-air",
+    "trial": 2,
+    "success": true,
+    "steps": 420
+  }
+]

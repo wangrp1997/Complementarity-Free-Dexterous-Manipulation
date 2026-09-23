@@ -1,0 +1,99 @@
+{
+  "schema": "motion_probe_v1",
+  "hand": "trifinger",
+  "objects": [
+    "airplane"
+  ],
+  "trials": 3,
+  "object_half_extent": 0.03,
+  "note": "Observer only. FREE files untouched; no controller changes.",
+  "episodes": [
+    {
+      "hand": "trifinger",
+      "object": "airplane",
+      "target_type": "rotation",
+      "trial": 0,
+      "success": true,
+      "steps": 156,
+      "rot_travel_deg": 153.575,
+      "rot_net_deg": 69.622,
+      "quat_err": 0.01847,
+      "pos_err": 0.01438,
+      "z_init": 0.015,
+      "z_max": 0.015,
+      "z_final": 0.01233,
+      "max_clearance_above_table": -0.015,
+      "xy_travel": 0.15803,
+      "frac_steps_with_fingertip_contact": 0.4167,
+      "frac_steps_with_table_contact": 0.9423,
+      "frac_steps_with_any_object_contact": 0.9872,
+      "frac_steps_airborne_no_table": 0.0577,
+      "mean_non_table_normal_force": 0.11179,
+      "mean_table_normal_force": 0.13232,
+      "contact_class_counts": {
+        "table": 452,
+        "fingertip": 272,
+        "palm": 0,
+        "other": 0
+      }
+    },
+    {
+      "hand": "trifinger",
+      "object": "airplane",
+      "target_type": "rotation",
+      "trial": 1,
+      "success": true,
+      "steps": 51,
+      "rot_travel_deg": 63.18,
+      "rot_net_deg": 38.557,
+      "quat_err": 0.01966,
+      "pos_err": 0.00776,
+      "z_init": 0.015,
+      "z_max": 0.015,
+      "z_final": 0.01219,
+      "max_clearance_above_table": -0.015,
+      "xy_travel": 0.05522,
+      "frac_steps_with_fingertip_contact": 0.5098,
+      "frac_steps_with_table_contact": 0.9804,
+      "frac_steps_with_any_object_contact": 0.9804,
+      "frac_steps_airborne_no_table": 0.0196,
+      "mean_non_table_normal_force": 0.11855,
+      "mean_table_normal_force": 0.1518,
+      "contact_class_counts": {
+        "table": 114,
+        "fingertip": 111,
+        "palm": 0,
+        "other": 0
+      }
+    },
+    {
+      "hand": "trifinger",
+      "object": "airplane",
+      "target_type": "rotation",
+      "trial": 2,
+      "success": true,
+      "steps": 21,
+      "rot_travel_deg": 42.629,
+      "rot_net_deg": 20.558,
+      "quat_err": 0.01299,
+      "pos_err": 0.01158,
+      "z_init": 0.015,
+      "z_max": 0.0157,
+      "z_final": 0.0157,
+      "max_clearance_above_table": -0.0143,
+      "xy_travel": 0.01693,
+      "frac_steps_with_fingertip_contact": 0.2857,
+      "frac_steps_with_table_contact": 0.9048,
+      "frac_steps_with_any_object_contact": 0.9048,
+      "frac_steps_airborne_no_table": 0.0952,
+      "mean_non_table_normal_force": 0.03367,
+      "mean_table_normal_force": 0.10748,
+      "contact_class_counts": {
+        "table": 56,
+        "fingertip": 23,
+        "palm": 0,
+        "other": 0
+      }
+    }
+  ]
+}

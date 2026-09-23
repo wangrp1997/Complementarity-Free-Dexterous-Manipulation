@@ -1,0 +1,83 @@
+[
+  {
+    "key": "ep000",
+    "hand": "fingertips",
+    "object": "cube",
+    "target_type": "in-air",
+    "trial": 0,
+    "success": true,
+    "steps": 183
+  },
+  {
+    "key": "ep001",
+    "hand": "fingertips",
+    "object": "cube",
+    "target_type": "in-air",
+    "trial": 1,
+    "success": true,
+    "steps": 165
+  },
+  {
+    "key": "ep002",
+    "hand": "fingertips",
+    "object": "cube",
+    "target_type": "in-air",
+    "trial": 2,
+    "success": true,
+    "steps": 101
+  },
+  {
+    "key": "ep003",
+    "hand": "fingertips",
+    "object": "cube",
+    "target_type": "ground-rotation",
+    "trial": 0,
+    "success": true,
+    "steps": 152
+  },
+  {
+    "key": "ep004",
+    "hand": "fingertips",
+    "object": "cube",
+    "target_type": "ground-rotation",
+    "trial": 1,
+    "success": true,
+    "steps": 118
+  },
+  {
+    "key": "ep005",
+    "hand": "fingertips",
+    "object": "cube",
+    "target_type": "ground-rotation",
+    "trial": 2,
+    "success": true,
+    "steps": 198
+  },
+  {
+    "key": "ep006",
+    "hand": "fingertips",
+    "object": "cube",
+    "target_type": "ground-flip",
+    "trial": 0,
+    "success": true,
+    "steps": 127
+  },
+  {
+    "key": "ep007",
+    "hand": "fingertips",
+    "object": "cube",
+    "target_type": "ground-flip",
+    "trial": 1,
+    "success": true,
+    "steps": 116
+  },
+  {
+    "key": "ep008",
+    "hand": "fingertips",
+    "object": "cube",
+    "target_type": "ground-flip",
+    "trial": 2,
+    "success": true,
+    "steps": 140
+  }
+]

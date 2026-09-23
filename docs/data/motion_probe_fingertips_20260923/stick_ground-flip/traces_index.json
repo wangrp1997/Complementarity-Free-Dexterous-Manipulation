@@ -1,0 +1,29 @@
+[
+  {
+    "key": "ep000",
+    "hand": "fingertips",
+    "object": "stick",
+    "target_type": "ground-flip",
+    "trial": 0,
+    "success": true,
+    "steps": 270
+  },
+  {
+    "key": "ep001",
+    "hand": "fingertips",
+    "object": "stick",
+    "target_type": "ground-flip",
+    "trial": 1,
+    "success": true,
+    "steps": 405
+  },
+  {
+    "key": "ep002",
+    "hand": "fingertips",
+    "object": "stick",
+    "target_type": "ground-flip",
+    "trial": 2,
+    "success": true,
+    "steps": 222
+  }
+]

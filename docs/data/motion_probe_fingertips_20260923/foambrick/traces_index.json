@@ -1,0 +1,83 @@
+[
+  {
+    "key": "ep000",
+    "hand": "fingertips",
+    "object": "foambrick",
+    "target_type": "in-air",
+    "trial": 0,
+    "success": true,
+    "steps": 298
+  },
+  {
+    "key": "ep001",
+    "hand": "fingertips",
+    "object": "foambrick",
+    "target_type": "in-air",
+    "trial": 1,
+    "success": true,
+    "steps": 186
+  },
+  {
+    "key": "ep002",
+    "hand": "fingertips",
+    "object": "foambrick",
+    "target_type": "in-air",
+    "trial": 2,
+    "success": true,
+    "steps": 212
+  },
+  {
+    "key": "ep003",
+    "hand": "fingertips",
+    "object": "foambrick",
+    "target_type": "ground-rotation",
+    "trial": 0,
+    "success": true,
+    "steps": 121
+  },
+  {
+    "key": "ep004",
+    "hand": "fingertips",
+    "object": "foambrick",
+    "target_type": "ground-rotation",
+    "trial": 1,
+    "success": true,
+    "steps": 118
+  },
+  {
+    "key": "ep005",
+    "hand": "fingertips",
+    "object": "foambrick",
+    "target_type": "ground-rotation",
+    "trial": 2,
+    "success": true,
+    "steps": 135
+  },
+  {
+    "key": "ep006",
+    "hand": "fingertips",
+    "object": "foambrick",
+    "target_type": "ground-flip",
+    "trial": 0,
+    "success": true,
+    "steps": 202
+  },
+  {
+    "key": "ep007",
+    "hand": "fingertips",
+    "object": "foambrick",
+    "target_type": "ground-flip",
+    "trial": 1,
+    "success": true,
+    "steps": 173
+  },
+  {
+    "key": "ep008",
+    "hand": "fingertips",
+    "object": "foambrick",
+    "target_type": "ground-flip",
+    "trial": 2,
+    "success": false,
+    "steps": 2000
+  }
+]

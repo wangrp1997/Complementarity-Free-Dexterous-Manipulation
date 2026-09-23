@@ -1,16 +1,24 @@
 """Idealized virtual fingertip sensing, without modifying the FREE plant.
 
-Only loaded contacts on the four named fingertip collision geoms are sensed.
-This simulation observation model does not imply that FREE has tactile
-hardware or that a physical sensor exposes simulator contact discretization.
+Senses loaded contacts on the fingertip collision geoms of the current hand.
+The fingertip set is discovered from the model (or passed explicitly), so the
+same observer works for Allegro (4 fingertips, named sites), the TriFinger
+fingertips (fingertip_0/120/240) and the fingertips task (3 fingertips, geoms
+only, no sites).
+
+This simulation observation model does not imply that FREE has tactile hardware
+or that a physical sensor exposes simulator contact discretization.
 """
 from __future__ import annotations
 
 import mujoco
 import numpy as np
 
+# Backwards-compatible Allegro defaults; overridable per instance.
 FINGERTIP_NAMES = ("ftp_0", "ftp_1", "ftp_2", "ftp_3")
 FINGERTIP_GEOMS = ("fingertip0", "fingertip1", "fingertip2", "fingertip3")
+FINGERTIP_GEOM_PREFIX = "fingertip"
+
 TACTILE_COLUMNS = (
     "active",
     "weighted_position_object_x", "weighted_position_object_y", "weighted_position_object_z",
@@ -39,8 +47,18 @@ def flatten_contact_records(records: list[dict]) -> np.ndarray:
     ], dtype=np.float64).reshape(-1, len(CONTACT_RECORD_COLUMNS))
 
 
+def discover_fingertip_geoms(model: mujoco.MjModel, prefix: str = FINGERTIP_GEOM_PREFIX) -> tuple[str, ...]:
+    """Names of all collision geoms whose name starts with `prefix`, sorted."""
+    names = []
+    for geom in range(model.ngeom):
+        name = mujoco.mj_id2name(model, mujoco.mjtObj.mjOBJ_GEOM, geom)
+        if name and name.startswith(prefix):
+            names.append(name)
+    return tuple(sorted(names))
+
+
 class VirtualTactile:
-    """Four fingertip aggregates and all loaded contacts in an object frame.
+    """Per-fingertip aggregates and all loaded contacts in an object frame.
 
     Forces act on the object; normals point from the contacting surface into
     the object. Aggregate torque is the complete fingertip wrench about the
@@ -48,27 +66,42 @@ class VirtualTactile:
     Weighted position and normal are descriptive summaries: they need not
     identify an actual contact, and the mean normal is not renormalized.
     The independent torque must not be replaced by centroid cross force.
+
+    Finger set: pass `finger_geoms` explicitly, or leave it None to discover
+    every geom named ``fingertip*``. Fingertip positions come from sites
+    ``ftp_0..ftp_{n-1}`` when they exist, otherwise from the fingertip bodies.
+    The palm geom is optional.
     """
 
     feature_dim = len(TACTILE_COLUMNS)
-    schema_version = "virtual_tactile_v2"
+    schema_version = "virtual_tactile_v3"
 
-    def __init__(self, object_names: tuple[str, ...] = ("obj",), force_threshold: float = 1e-8):
+    def __init__(self, object_names: tuple[str, ...] = ("obj",), force_threshold: float = 1e-8,
+                 finger_geoms: tuple[str, ...] | None = None,
+                 finger_sites: tuple[str, ...] | None = None):
         if not object_names:
             raise ValueError("At least one object geom name is required")
         if not np.isfinite(force_threshold) or force_threshold < 0:
             raise ValueError("force_threshold must be finite and nonnegative")
         self.object_names = tuple(object_names)
         self.force_threshold = float(force_threshold)
+        self.requested_finger_geoms = None if finger_geoms is None else tuple(finger_geoms)
+        self.requested_finger_sites = None if finger_sites is None else tuple(finger_sites)
         self._model = None
         self._scratch = None
 
     def schema_metadata(self) -> dict:
+        bound = self._model is not None
         return {
             "version": self.schema_version,
             "tactile_columns": list(TACTILE_COLUMNS),
             "contact_record_columns": list(CONTACT_RECORD_COLUMNS),
-            "finger_geoms": list(FINGERTIP_GEOMS),
+            "finger_geoms": list(self.finger_geom_names_) if bound else (
+                list(self.requested_finger_geoms) if self.requested_finger_geoms
+                else f"discovered from geoms named '{FINGERTIP_GEOM_PREFIX}*'"),
+            "n_fingers": int(self.n_fingers_) if bound else None,
+            "finger_position_source": self.finger_position_source_ if bound else "sites ftp_i if present, else fingertip bodies",
+            "has_palm_geom": bool(bound and self._palm_geom >= 0),
             "object_geoms": list(self.object_names),
             "vector_frame": "object rigid-body/CAD registration frame, body origin, not COM",
             "force_sign": "force and contact torque exerted on object; normal points into object",
@@ -78,7 +111,7 @@ class VirtualTactile:
             "fingertip_positions_object_frame": "object body/CAD registration frame",
             "units": {"position": "m", "force": "N", "torque": "N m"},
             "active_contact": f"efc_address >= 0 and normal_force > {self.force_threshold:g} N",
-            "sensor_model": "ideal noiseless point contact force/position sensing, only fingertip0..3",
+            "sensor_model": "ideal noiseless point contact force/position sensing on the fingertip geoms only",
             "observation_evaluation": "mj_forward on complete independent MjData copy at current plant state",
             "limitations": [
                 "No tactile image, measured area, slip flag, or friction estimate is provided.",
@@ -103,18 +136,43 @@ class VirtualTactile:
             raise ValueError("Object geoms must belong to one rigid body to define a common object frame")
         self._object_geoms = set(geoms)
         self._object_body = bodies.pop()
+
+        finger_names = self.requested_finger_geoms or discover_fingertip_geoms(model)
+        if not finger_names:
+            raise ValueError(
+                f"No fingertip geoms found (looked for names starting with "
+                f"'{FINGERTIP_GEOM_PREFIX}'); pass finger_geoms explicitly")
         self._finger_geoms = {}
-        for finger, name in enumerate(FINGERTIP_GEOMS):
+        self._finger_bodies = []
+        for finger, name in enumerate(finger_names):
             geom = mujoco.mj_name2id(model, mujoco.mjtObj.mjOBJ_GEOM, name)
             if geom < 0:
                 raise ValueError(f"Fingertip geometry not found: {name}")
             self._finger_geoms[geom] = finger
+            self._finger_bodies.append(int(model.geom_bodyid[geom]))
+        self.finger_geom_names_ = tuple(finger_names)
+        self.n_fingers_ = len(finger_names)
+
+        site_names = self.requested_finger_sites
+        if site_names is None:
+            candidates = tuple(f"ftp_{i}" for i in range(self.n_fingers_))
+            resolved = [mujoco.mj_name2id(model, mujoco.mjtObj.mjOBJ_SITE, n) for n in candidates]
+            site_names = candidates if all(s >= 0 for s in resolved) else ()
+        self._sites = [mujoco.mj_name2id(model, mujoco.mjtObj.mjOBJ_SITE, n) for n in site_names]
+        if self._sites and any(s < 0 for s in self._sites):
+            raise ValueError(f"Fingertip sites not found: {site_names}")
+        if self._sites and len(self._sites) != self.n_fingers_:
+            raise ValueError("Number of fingertip sites must match the number of fingertip geoms")
+        self.finger_position_source_ = "sites" if self._sites else "bodies"
+
         self._palm_geom = mujoco.mj_name2id(model, mujoco.mjtObj.mjOBJ_GEOM, "palm")
-        self._sites = [mujoco.mj_name2id(model, mujoco.mjtObj.mjOBJ_SITE, n) for n in FINGERTIP_NAMES]
-        if any(s < 0 for s in self._sites):
-            raise ValueError("All four fingertip sites ftp_0..3 are required")
         self._model = model
         self._scratch = mujoco.MjData(model)
+
+    def _fingertip_positions(self, data: mujoco.MjData) -> np.ndarray:
+        if self._sites:
+            return data.site_xpos[self._sites].copy()
+        return data.xpos[self._finger_bodies].copy()
 
     def observe(self, simulator) -> dict:
         model = simulator.model_
@@ -127,8 +185,8 @@ class VirtualTactile:
         origin = data.xpos[self._object_body]
         rotation = data.xmat[self._object_body].reshape(3, 3)
         world_to_object = rotation.T
-        tactile = np.zeros((4, self.feature_dim), dtype=np.float64)
-        fingertips = data.site_xpos[self._sites].copy()
+        tactile = np.zeros((self.n_fingers_, self.feature_dim), dtype=np.float64)
+        fingertips = self._fingertip_positions(data)
         records = []
         counts = dict(n_object_contacts=0, n_fingertip_contacts=0, n_palm_contacts=0, n_other_object_contacts=0)
         for contact_id in range(data.ncon):

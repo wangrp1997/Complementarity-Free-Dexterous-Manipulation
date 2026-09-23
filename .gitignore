@@ -10,3 +10,5 @@ venv/
 docs/literature_sources_20260922/
 docs/**/*.pdf
 .DS_Store
+MUJOCO_LOG.TXT
+docs/data/motion_probe_*T*/

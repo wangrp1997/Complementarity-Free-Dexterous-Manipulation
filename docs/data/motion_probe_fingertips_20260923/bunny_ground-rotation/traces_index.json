@@ -1,0 +1,29 @@
+[
+  {
+    "key": "ep000",
+    "hand": "fingertips",
+    "object": "bunny",
+    "target_type": "ground-rotation",
+    "trial": 0,
+    "success": true,
+    "steps": 114
+  },
+  {
+    "key": "ep001",
+    "hand": "fingertips",
+    "object": "bunny",
+    "target_type": "ground-rotation",
+    "trial": 1,
+    "success": true,
+    "steps": 110
+  },
+  {
+    "key": "ep002",
+    "hand": "fingertips",
+    "object": "bunny",
+    "target_type": "ground-rotation",
+    "trial": 2,
+    "success": true,
+    "steps": 122
+  }
+]

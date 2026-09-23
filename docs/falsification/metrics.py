@@ -106,7 +106,8 @@ def score(con_jacs, dv, row_selector=None):
     consistency= residual / ||J dq||      接触点自身运动尺度
     adequacy   = ||x_pred - x_obs|| / ||x_obs||  （仅当 |x_obs| > EPS_X 才有意义）
     """
-    dq_hand, x_obs = dv[:16], dv[16:]
+    n_hand = len(dv) - 6  # object always contributes a 6-DoF free joint
+    dq_hand, x_obs = dv[:n_hand], dv[n_hand:]
     rows = []
     for ci, cj in enumerate(con_jacs):
         for ri in range(cj.shape[0]):
@@ -116,7 +117,7 @@ def score(con_jacs, dv, row_selector=None):
         return dict(nrows=0, rank=0, null_dim=6, residual=np.inf,
                     consistency=np.inf, adequacy=np.inf, undetermined=True)
     R = np.vstack(rows)
-    A, J = R[:, 16:], R[:, :16]
+    A, J = R[:, n_hand:], R[:, :n_hand]
     resid = float(np.linalg.norm(A @ x_obs + J @ dq_hand))
     denom = max(float(np.linalg.norm(J @ dq_hand)), 1e-12)
     x_norm = float(np.linalg.norm(x_obs))

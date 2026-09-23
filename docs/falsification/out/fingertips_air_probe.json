@@ -1,0 +1,3134 @@
+{
+  "check": "F5_L4_F1_on_fingertips_in_air",
+  "scale": "state_snapshot",
+  "convention": "CONVENTIONS.md@2026-09-22",
+  "uses": "none",
+  "n_frames_included": 183,
+  "n_frames_undetermined_excluded": 65,
+  "epsilon_x": 0.001,
+  "thresholds": {
+    "zero_load": {
+      "value": 1e-09,
+      "provenance": "\u6d6e\u70b9\u7ea7\u96f6"
+    }
+  },
+  "caveats": [
+    "\u5355\u7269\u4f53 cube\u3001\u5355 seed\uff1bpilot",
+    "\u53cd\u4e8b\u5b9e\u5728\u72ec\u7acb\u514b\u9686\u73af\u5883\u4e0a\u6267\u884c",
+    "\u4e3b\u8f68\u8ff9\u672a\u88ab\u53cd\u4e8b\u5b9e\u4fee\u6539\uff08\u811a\u672c\u81ea\u68c0\uff09"
+  ],
+  "verdict": "undetermined",
+  "records": [
+    {
+      "k": 0,
+      "obj_z": 0.03,
+      "table_load": 0.0,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": 0.0,
+      "d_obj": 0.0
+    },
+    {
+      "k": 1,
+      "obj_z": 0.029849396593493387,
+      "table_load": 0.10137647681105762,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 2,
+      "obj_z": 0.02988196992413504,
+      "table_load": 0.09799670103214331,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 3,
+      "obj_z": 0.029919160749752833,
+      "table_load": 0.09771502707666649,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 4,
+      "obj_z": 0.02994203228387686,
+      "table_load": 0.09784139692246072,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 5,
+      "obj_z": 0.02995447770380212,
+      "table_load": 0.09795601895620605,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 6,
+      "obj_z": 0.029961005124106124,
+      "table_load": 0.09802394556687094,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 7,
+      "obj_z": 0.02996438765807254,
+      "table_load": 0.09806049924678138,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 8,
+      "obj_z": 0.029966133563955753,
+      "table_load": 0.09807959755754098,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 9,
+      "obj_z": 0.02996703358231399,
+      "table_load": 0.09808948055023747,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 10,
+      "obj_z": 0.029967497371404705,
+      "table_load": 0.0980945790270056,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 11,
+      "obj_z": 0.029967736345101872,
+      "table_load": 0.09809720678043643,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 12,
+      "obj_z": 0.02996785947825537,
+      "table_load": 0.09809856078511252,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 13,
+      "obj_z": 0.029967922924098646,
+      "table_load": 0.09809925843309282,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 14,
+      "obj_z": 0.029967955615616562,
+      "table_load": 0.0980996178973816,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 15,
+      "obj_z": 0.029967972460564284,
+      "table_load": 0.09809980311470581,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 16,
+      "obj_z": 0.02996798114028783,
+      "table_load": 0.09809989855076708,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 17,
+      "obj_z": 0.02996798561271279,
+      "table_load": 0.09809994772602378,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 18,
+      "obj_z": 0.029967987917234238,
+      "table_load": 0.09809997306462578,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 19,
+      "obj_z": 0.02996798910469353,
+      "table_load": 0.09809998612091374,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 20,
+      "obj_z": 0.029967989716560273,
+      "table_load": 0.09809999284847047,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": 0.0,
+      "d_obj": 0.0
+    },
+    {
+      "k": 21,
+      "obj_z": 0.029967990031839278,
+      "table_load": 0.09809999631500325,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 22,
+      "obj_z": 0.029967990194294355,
+      "table_load": 0.09809999810121706,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 23,
+      "obj_z": 0.02996799027800324,
+      "table_load": 0.09809999902160643,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 24,
+      "obj_z": 0.029967990321136253,
+      "table_load": 0.09809999949585924,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 25,
+      "obj_z": 0.029967990343361575,
+      "table_load": 0.0980999997402294,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 26,
+      "obj_z": 0.029967990354813713,
+      "table_load": 0.0980999998661469,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 27,
+      "obj_z": 0.029967990360714705,
+      "table_load": 0.09809999993102891,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 28,
+      "obj_z": 0.029967990363755328,
+      "table_load": 0.09809999996446107,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 29,
+      "obj_z": 0.02996799036531223,
+      "table_load": 0.09809999998253494,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 30,
+      "obj_z": 0.029967990366108956,
+      "table_load": 0.09809999999178835,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 31,
+      "obj_z": 0.029967990366518905,
+      "table_load": 0.09810000018286384,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 32,
+      "obj_z": 0.029967990366732797,
+      "table_load": 0.09810000012987267,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 33,
+      "obj_z": 0.029967990366840953,
+      "table_load": 0.0980999998948003,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 34,
+      "obj_z": 0.029967990366925927,
+      "table_load": 0.09809999971337065,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 35,
+      "obj_z": 0.02996799036696151,
+      "table_load": 0.09809999997996735,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 36,
+      "obj_z": 0.029967990366977296,
+      "table_load": 0.09809999990453092,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 37,
+      "obj_z": 0.029967990366997245,
+      "table_load": 0.09809999981630313,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 38,
+      "obj_z": 0.029967990367021358,
+      "table_load": 0.09809999971528384,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 39,
+      "obj_z": 0.029967990367019998,
+      "table_load": 0.09810000000849525,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 40,
+      "obj_z": 0.02996799036700366,
+      "table_load": 0.09810000002643741,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": 0.0,
+      "d_obj": 0.0
+    },
+    {
+      "k": 41,
+      "obj_z": 0.02996799036699231,
+      "table_load": 0.09810000002905124,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 42,
+      "obj_z": 0.029967990366985945,
+      "table_load": 0.09810000001635813,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 43,
+      "obj_z": 0.029967990366984568,
+      "table_load": 0.09809999998833678,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 44,
+      "obj_z": 0.029967990366988176,
+      "table_load": 0.09809999994499767,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 45,
+      "obj_z": 0.029967990366996766,
+      "table_load": 0.09809999988635146,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 46,
+      "obj_z": 0.029967990367010346,
+      "table_load": 0.09809999981237702,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 47,
+      "obj_z": 0.02996799036702891,
+      "table_load": 0.098099999723085,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 48,
+      "obj_z": 0.029967990367027762,
+      "table_load": 0.09810000000555257,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 49,
+      "obj_z": 0.02996799036700835,
+      "table_load": 0.09810000001937202,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 50,
+      "obj_z": 0.029967990366996024,
+      "table_load": 0.09810000001142492,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 51,
+      "obj_z": 0.029967990366990778,
+      "table_load": 0.09809999998172188,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 52,
+      "obj_z": 0.029967990366992617,
+      "table_load": 0.0980999999302521,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 53,
+      "obj_z": 0.029967990367001537,
+      "table_load": 0.09809999985702625,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 54,
+      "obj_z": 0.029967990367017538,
+      "table_load": 0.09809999976204459,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 55,
+      "obj_z": 0.029967990367030763,
+      "table_load": 0.09810000023395148,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.07338797344805803
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 56,
+      "obj_z": 0.029990516249916357,
+      "table_load": 0.11193694616162496,
+      "finger_load": 0.07338797344805803,
+      "n_ft": 1,
+      "loads": [
+        0.0,
+        0.07417202289594998,
+        0.0
+      ],
+      "consistency": 38.73077855969502,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 57,
+      "obj_z": 0.029953562101079845,
+      "table_load": 0.12066491214561399,
+      "finger_load": 0.07417202289594998,
+      "n_ft": 1,
+      "loads": [
+        0.0,
+        0.0192512111767677,
+        0.0971768282575983
+      ],
+      "consistency": 0.21968072949960332,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 58,
+      "obj_z": 0.031218070029836967,
+      "table_load": 0.0,
+      "finger_load": 0.116428039434366,
+      "n_ft": 2,
+      "loads": [
+        0.06393664021031793,
+        0.05637270767249988,
+        0.09205686258753897
+      ],
+      "consistency": 0.4980683235821355,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 59,
+      "obj_z": 0.03191567870137104,
+      "table_load": 0.055498507753560265,
+      "finger_load": 0.21236621047035678,
+      "n_ft": 3,
+      "loads": [
+        0.03549723063214317,
+        0.02899168805897409,
+        0.04769634242220411
+      ],
+      "consistency": 0.5175392542130266,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 60,
+      "obj_z": 0.033240803988226146,
+      "table_load": 0.10746155990292054,
+      "finger_load": 0.11218526111332136,
+      "n_ft": 3,
+      "loads": [
+        0.0,
+        0.0,
+        0.0460033446627449
+      ],
+      "consistency": 0.5770004149555806,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": 0.06640348153622722,
+      "d_obj": 0.00021270451440913056
+    },
+    {
+      "k": 61,
+      "obj_z": 0.03487662118682459,
+      "table_load": 0.0,
+      "finger_load": 0.0460033446627449,
+      "n_ft": 1,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": 0.99003576686644,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 62,
+      "obj_z": 0.034591280290036865,
+      "table_load": 0.08333820334560454,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.1363186262016934,
+        0.1666896685311888
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 63,
+      "obj_z": 0.033805757273384814,
+      "table_load": 0.09354823806275142,
+      "finger_load": 0.3030082947328822,
+      "n_ft": 2,
+      "loads": [
+        0.0,
+        0.06450181359344967,
+        0.0
+      ],
+      "consistency": 0.6542789084435758,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 64,
+      "obj_z": 0.03501395339630252,
+      "table_load": 0.12633000694080293,
+      "finger_load": 0.06450181359344967,
+      "n_ft": 1,
+      "loads": [
+        0.1244471110091784,
+        0.2696924429572326,
+        0.39263904061356364
+      ],
+      "consistency": 0.48272980956796024,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 65,
+      "obj_z": 0.03487260674185475,
+      "table_load": 0.0,
+      "finger_load": 0.7867785945799746,
+      "n_ft": 3,
+      "loads": [
+        0.09171677211632644,
+        0.11014404815379175,
+        0.04664592967478381
+      ],
+      "consistency": 0.6735308565994282,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 66,
+      "obj_z": 0.03402241305521553,
+      "table_load": 0.0,
+      "finger_load": 0.24850674994490202,
+      "n_ft": 3,
+      "loads": [
+        0.0,
+        0.0,
+        0.10555805303949743
+      ],
+      "consistency": 0.6284574157089838,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 67,
+      "obj_z": 0.03288028662376131,
+      "table_load": 0.08685349326767679,
+      "finger_load": 0.10555805303949743,
+      "n_ft": 1,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": 1.50704258494345,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 68,
+      "obj_z": 0.031783387210195704,
+      "table_load": 0.08798875839916033,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.07147083288387,
+        0.11824604899286775,
+        0.1546696058982912
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 69,
+      "obj_z": 0.03088256333318761,
+      "table_load": 0.06883192608937833,
+      "finger_load": 0.34438648777502895,
+      "n_ft": 3,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": 0.6312465072818506,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 70,
+      "obj_z": 0.03129565201966546,
+      "table_load": 0.12257214925964983,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.12125383861576763,
+        0.08208758696211185,
+        0.20578261134485248
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 71,
+      "obj_z": 0.031360699184962475,
+      "table_load": 0.08087628550291447,
+      "finger_load": 0.40912403692273197,
+      "n_ft": 3,
+      "loads": [
+        0.0715752802671074,
+        0.0,
+        0.0
+      ],
+      "consistency": 0.8532688602217456,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 72,
+      "obj_z": 0.03177054256709664,
+      "table_load": 0.08430840772298029,
+      "finger_load": 0.0715752802671074,
+      "n_ft": 1,
+      "loads": [
+        0.24343091225305616,
+        0.07588056484465712,
+        0.3157231666365869
+      ],
+      "consistency": 1.0,
+      "rank": 0,
+      "null_dim": 6,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 73,
+      "obj_z": 0.03208956426501777,
+      "table_load": 0.12392879219778964,
+      "finger_load": 0.6350346437343002,
+      "n_ft": 3,
+      "loads": [
+        0.0,
+        0.0,
+        0.03389116203378031
+      ],
+      "consistency": 0.6559137075593755,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 74,
+      "obj_z": 0.031910227210074436,
+      "table_load": 0.0735740097508646,
+      "finger_load": 0.03389116203378031,
+      "n_ft": 1,
+      "loads": [
+        0.005240884981964609,
+        0.03068975850314883,
+        0.0
+      ],
+      "consistency": 1.2601588579721166,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 75,
+      "obj_z": 0.03028187955211029,
+      "table_load": 0.08890745628176047,
+      "finger_load": 0.03593064348511344,
+      "n_ft": 2,
+      "loads": [
+        0.19014018160283566,
+        0.11333106605410367,
+        0.3444663366258233
+      ],
+      "consistency": 0.7448820226758259,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 76,
+      "obj_z": 0.03012928171437895,
+      "table_load": 0.1371254695331761,
+      "finger_load": 0.6479375842827626,
+      "n_ft": 3,
+      "loads": [
+        0.12302640719095947,
+        0.011125956475636195,
+        0.09124524100949676
+      ],
+      "consistency": 0.6957053727292974,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 77,
+      "obj_z": 0.030819503622978927,
+      "table_load": 0.1338783564074037,
+      "finger_load": 0.22539760467609243,
+      "n_ft": 3,
+      "loads": [
+        0.04462083618187605,
+        0.0,
+        0.05765023182260586
+      ],
+      "consistency": 0.8607232323518523,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 78,
+      "obj_z": 0.030712526653935996,
+      "table_load": 0.058340959003157375,
+      "finger_load": 0.10227106800448191,
+      "n_ft": 2,
+      "loads": [
+        0.14135139651516473,
+        0.0,
+        0.1302737462331738
+      ],
+      "consistency": 0.9651323298773059,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 79,
+      "obj_z": 0.0300802904400406,
+      "table_load": 0.14950263855728646,
+      "finger_load": 0.27162514274833854,
+      "n_ft": 2,
+      "loads": [
+        0.24381857384291372,
+        0.0,
+        0.2655935566220583
+      ],
+      "consistency": 0.334327254278116,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 80,
+      "obj_z": 0.032225426172030655,
+      "table_load": 0.0,
+      "finger_load": 0.509412130464972,
+      "n_ft": 2,
+      "loads": [
+        0.14896747840320135,
+        0.0,
+        0.1671592563535258
+      ],
+      "consistency": 0.4563788505165695,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": 0.031090538787532013,
+      "d_obj": 0.00011939866003172846
+    },
+    {
+      "k": 81,
+      "obj_z": 0.03393137429125363,
+      "table_load": 0.047425616465239816,
+      "finger_load": 0.31612673475672715,
+      "n_ft": 2,
+      "loads": [
+        0.15684122854988825,
+        0.0,
+        0.20183640464408883
+      ],
+      "consistency": 0.43604394276522296,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 82,
+      "obj_z": 0.03588461424541729,
+      "table_load": 0.0,
+      "finger_load": 0.35867763319397705,
+      "n_ft": 2,
+      "loads": [
+        0.08550469498640194,
+        0.0,
+        0.11560207441951686
+      ],
+      "consistency": 0.509839493117941,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 83,
+      "obj_z": 0.037225019964377826,
+      "table_load": 0.04858667913892632,
+      "finger_load": 0.20110676940591882,
+      "n_ft": 2,
+      "loads": [
+        0.3174794527068676,
+        0.0,
+        0.3225309695514201
+      ],
+      "consistency": 0.27511937793516295,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 84,
+      "obj_z": 0.039174002452490156,
+      "table_load": 0.0,
+      "finger_load": 0.6400104222582876,
+      "n_ft": 2,
+      "loads": [
+        0.014146730937918997,
+        0.0,
+        0.06285672007848932
+      ],
+      "consistency": 0.4507741169096403,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 85,
+      "obj_z": 0.040427963661052224,
+      "table_load": 0.0,
+      "finger_load": 0.07700345101640832,
+      "n_ft": 2,
+      "loads": [
+        0.327301914945038,
+        0.0,
+        0.342192478980385
+      ],
+      "consistency": 0.3465731100878365,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 86,
+      "obj_z": 0.042014889305638375,
+      "table_load": 0.0624292089663831,
+      "finger_load": 0.669494393925423,
+      "n_ft": 2,
+      "loads": [
+        0.4036824589768314,
+        0.0,
+        0.40188072644604395
+      ],
+      "consistency": 0.24637189219587635,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 87,
+      "obj_z": 0.04402656842235996,
+      "table_load": 0.0,
+      "finger_load": 0.8055631854228753,
+      "n_ft": 2,
+      "loads": [
+        0.045782172825635646,
+        0.0,
+        0.08510026592795383
+      ],
+      "consistency": 0.31351890894181983,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 88,
+      "obj_z": 0.04536103477073776,
+      "table_load": 0.061274705717632355,
+      "finger_load": 0.1308824387535895,
+      "n_ft": 2,
+      "loads": [
+        0.2990987930996578,
+        0.0,
+        0.2982063935823197
+      ],
+      "consistency": 0.30210488876803676,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 89,
+      "obj_z": 0.04702174014842932,
+      "table_load": 0.0,
+      "finger_load": 0.5973051866819775,
+      "n_ft": 2,
+      "loads": [
+        0.371597035915675,
+        0.0,
+        0.3924802240150539
+      ],
+      "consistency": 0.21708647425868646,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 90,
+      "obj_z": 0.04855603953255379,
+      "table_load": 0.0855484112423011,
+      "finger_load": 0.7640772599307288,
+      "n_ft": 2,
+      "loads": [
+        0.06995966047830911,
+        0.0,
+        0.10008778777328589
+      ],
+      "consistency": 0.3339561862134011,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 91,
+      "obj_z": 0.0494061465539508,
+      "table_load": 0.0,
+      "finger_load": 0.170047448251595,
+      "n_ft": 2,
+      "loads": [
+        0.3137994179321087,
+        0.0,
+        0.3252379057135475
+      ],
+      "consistency": 0.4479039266457196,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 92,
+      "obj_z": 0.05037400053397104,
+      "table_load": 0.09814199463049544,
+      "finger_load": 0.6390373236456561,
+      "n_ft": 2,
+      "loads": [
+        0.14958801090388252,
+        0.0,
+        0.13696382162921603
+      ],
+      "consistency": 0.6407634959933722,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 93,
+      "obj_z": 0.05100942659988951,
+      "table_load": 0.12512701110360852,
+      "finger_load": 0.28655183253309857,
+      "n_ft": 2,
+      "loads": [
+        0.12534635985259512,
+        0.0,
+        0.14072490315894542
+      ],
+      "consistency": 0.5553535222626607,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 94,
+      "obj_z": 0.051963523213820854,
+      "table_load": 0.0,
+      "finger_load": 0.26607126301154055,
+      "n_ft": 2,
+      "loads": [
+        0.4202802547768776,
+        0.0,
+        0.40972623905078337
+      ],
+      "consistency": 0.22355482886530423,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 95,
+      "obj_z": 0.05206310288127726,
+      "table_load": 0.0,
+      "finger_load": 0.830006493827661,
+      "n_ft": 2,
+      "loads": [
+        0.17629511153029942,
+        0.0,
+        0.1938469406785541
+      ],
+      "consistency": 0.15752550661197473,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 96,
+      "obj_z": 0.05171491291194836,
+      "table_load": 0.0,
+      "finger_load": 0.37014205220885354,
+      "n_ft": 2,
+      "loads": [
+        0.3292299281190244,
+        0.0,
+        0.3183369112177198
+      ],
+      "consistency": 0.3671275224825623,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 97,
+      "obj_z": 0.05117512906634615,
+      "table_load": 0.18626285975549298,
+      "finger_load": 0.6475668393367442,
+      "n_ft": 2,
+      "loads": [
+        0.2667080312218925,
+        0.0,
+        0.22936753259096374
+      ],
+      "consistency": 0.7757327744237191,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 98,
+      "obj_z": 0.051472842688002146,
+      "table_load": 0.12401443089094794,
+      "finger_load": 0.4960755638128562,
+      "n_ft": 2,
+      "loads": [
+        0.19503292209169434,
+        0.0,
+        0.20363919840271283
+      ],
+      "consistency": 0.35130580020772795,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 99,
+      "obj_z": 0.05208522232457821,
+      "table_load": 0.0,
+      "finger_load": 0.39867212049440715,
+      "n_ft": 2,
+      "loads": [
+        0.3738537119794599,
+        0.0,
+        0.35283671181302534
+      ],
+      "consistency": 0.25304791297657736,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 100,
+      "obj_z": 0.05163288616614785,
+      "table_load": 0.0,
+      "finger_load": 0.7266904237924852,
+      "n_ft": 2,
+      "loads": [
+        0.10603721886961186,
+        0.0,
+        0.1407289053687923
+      ],
+      "consistency": 0.7417990846817728,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": 0.007819548324262815,
+      "d_obj": 0.0001024880540423042
+    },
+    {
+      "k": 101,
+      "obj_z": 0.05052168338495035,
+      "table_load": 0.21467092434163604,
+      "finger_load": 0.24676612423840416,
+      "n_ft": 2,
+      "loads": [
+        0.12231496347572285,
+        0.0,
+        0.1360028943053175
+      ],
+      "consistency": 0.5132816588247898,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 102,
+      "obj_z": 0.051396764115162426,
+      "table_load": 0.054428581250451157,
+      "finger_load": 0.2583178577810403,
+      "n_ft": 2,
+      "loads": [
+        0.20371016148495624,
+        0.0,
+        0.1989711773690121
+      ],
+      "consistency": 0.74991805623398,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 103,
+      "obj_z": 0.05148887828885084,
+      "table_load": 0.18748010115779293,
+      "finger_load": 0.40268133885396834,
+      "n_ft": 2,
+      "loads": [
+        0.37741026967902935,
+        0.0,
+        0.31778667149548534
+      ],
+      "consistency": 0.28163480342540953,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 104,
+      "obj_z": 0.05271720985402672,
+      "table_load": 0.0,
+      "finger_load": 0.6951969411745147,
+      "n_ft": 2,
+      "loads": [
+        0.05176018128428417,
+        0.0,
+        0.05411573494044858
+      ],
+      "consistency": 0.9322718325837186,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 105,
+      "obj_z": 0.05376602941764774,
+      "table_load": 0.0,
+      "finger_load": 0.10587591622473275,
+      "n_ft": 2,
+      "loads": [
+        0.2323355342570103,
+        0.0,
+        0.1709550611118531
+      ],
+      "consistency": 0.6328658902708845,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 106,
+      "obj_z": 0.052562207418537045,
+      "table_load": 0.0,
+      "finger_load": 0.4032905953688634,
+      "n_ft": 2,
+      "loads": [
+        0.12452703795990422,
+        0.0,
+        0.1438250724634765
+      ],
+      "consistency": 0.40398007479258985,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 107,
+      "obj_z": 0.05141997332687453,
+      "table_load": 0.11123931741235683,
+      "finger_load": 0.2683521104233807,
+      "n_ft": 2,
+      "loads": [
+        0.0,
+        0.0,
+        0.14118755976801506
+      ],
+      "consistency": 0.8049961505937168,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 108,
+      "obj_z": 0.05124395872029283,
+      "table_load": 0.26701535440518054,
+      "finger_load": 0.14118755976801506,
+      "n_ft": 1,
+      "loads": [
+        0.05984135420926179,
+        0.0,
+        0.0
+      ],
+      "consistency": 1.9294500344745704,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 109,
+      "obj_z": 0.051476456089464225,
+      "table_load": 0.09338989382463912,
+      "finger_load": 0.05984135420926179,
+      "n_ft": 1,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": 1.0,
+      "rank": 0,
+      "null_dim": 6,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 110,
+      "obj_z": 0.05158093581939375,
+      "table_load": 0.09593416138928326,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 111,
+      "obj_z": 0.051596728080909274,
+      "table_load": 0.09647871254562165,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.01805579038366553
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 112,
+      "obj_z": 0.05154655570028012,
+      "table_load": 0.10384078704914097,
+      "finger_load": 0.01805579038366553,
+      "n_ft": 1,
+      "loads": [
+        0.0863341003086822,
+        0.0,
+        0.013785560871440667
+      ],
+      "consistency": 0.23268003833033224,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 113,
+      "obj_z": 0.05180986398950817,
+      "table_load": 0.07446595761476354,
+      "finger_load": 0.10011966118012287,
+      "n_ft": 2,
+      "loads": [
+        0.42350373151439313,
+        0.0,
+        0.3754239339654706
+      ],
+      "consistency": 0.3574001366528635,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 114,
+      "obj_z": 0.054316287067508046,
+      "table_load": 0.0,
+      "finger_load": 0.7989276654798637,
+      "n_ft": 2,
+      "loads": [
+        0.01978594431278441,
+        0.0,
+        0.03413255099212913
+      ],
+      "consistency": 0.8043113630419497,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 115,
+      "obj_z": 0.056734234295713004,
+      "table_load": 0.0,
+      "finger_load": 0.05391849530491354,
+      "n_ft": 2,
+      "loads": [
+        0.0,
+        0.06744199444418639,
+        0.0
+      ],
+      "consistency": 1.0248959293030167,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 116,
+      "obj_z": 0.056017119267440886,
+      "table_load": 0.0,
+      "finger_load": 0.06744199444418639,
+      "n_ft": 1,
+      "loads": [
+        0.07900819675543305,
+        0.08466987874145246,
+        0.0
+      ],
+      "consistency": 0.4656553040172011,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 117,
+      "obj_z": 0.0557318032439911,
+      "table_load": 0.0,
+      "finger_load": 0.1636780754968855,
+      "n_ft": 2,
+      "loads": [
+        0.0,
+        0.008342791423025077,
+        0.0
+      ],
+      "consistency": 0.7805930504303475,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 118,
+      "obj_z": 0.055350023091323246,
+      "table_load": 0.0,
+      "finger_load": 0.008342791423025077,
+      "n_ft": 1,
+      "loads": [
+        0.10118622053456178,
+        0.0,
+        0.0
+      ],
+      "consistency": 0.49774639528601905,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 119,
+      "obj_z": 0.05239505579030344,
+      "table_load": 0.0,
+      "finger_load": 0.10118622053456178,
+      "n_ft": 1,
+      "loads": [
+        0.1106442957314992,
+        0.0,
+        0.0
+      ],
+      "consistency": 1.0,
+      "rank": 0,
+      "null_dim": 6,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 120,
+      "obj_z": 0.04788182004363143,
+      "table_load": 0.0,
+      "finger_load": 0.1106442957314992,
+      "n_ft": 1,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": 1.0,
+      "rank": 0,
+      "null_dim": 6,
+      "d_tact": 0.0,
+      "d_obj": 0.0
+    },
+    {
+      "k": 121,
+      "obj_z": 0.04236282178968379,
+      "table_load": 0.09475122936319937,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.0,
+        0.0,
+        0.14064076215028873
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 122,
+      "obj_z": 0.03755133692863528,
+      "table_load": 0.3521336730246994,
+      "finger_load": 0.14064076215028873,
+      "n_ft": 1,
+      "loads": [
+        0.0,
+        0.13680146743787006,
+        0.2582127772122394
+      ],
+      "consistency": 0.7353473086612176,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 123,
+      "obj_z": 0.037351574434227146,
+      "table_load": 0.46088215302114893,
+      "finger_load": 0.3950142446501095,
+      "n_ft": 2,
+      "loads": [
+        0.0,
+        0.0,
+        0.2072811716920678
+      ],
+      "consistency": 0.9529085212571518,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 124,
+      "obj_z": 0.039079263253853,
+      "table_load": 0.32607018223562323,
+      "finger_load": 0.2072811716920678,
+      "n_ft": 1,
+      "loads": [
+        0.11832331750400715,
+        0.04995841488081536,
+        0.02516459615032467
+      ],
+      "consistency": 0.35871343179048526,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 125,
+      "obj_z": 0.04067907642144947,
+      "table_load": 0.09685856438939366,
+      "finger_load": 0.1934463285351472,
+      "n_ft": 3,
+      "loads": [
+        0.31464415378567234,
+        0.0,
+        0.2763473364114069
+      ],
+      "consistency": 1.0418092651330293,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 126,
+      "obj_z": 0.042685674727660605,
+      "table_load": 0.0,
+      "finger_load": 0.5909914901970792,
+      "n_ft": 2,
+      "loads": [
+        0.2315580006279964,
+        0.0,
+        0.19425863935049525
+      ],
+      "consistency": 0.32613681279686674,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 127,
+      "obj_z": 0.045121917513699615,
+      "table_load": 0.0,
+      "finger_load": 0.4258166399784916,
+      "n_ft": 2,
+      "loads": [
+        0.23525739615659147,
+        0.06608667419594076,
+        0.15283360503720123
+      ],
+      "consistency": 0.2677200104528148,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 128,
+      "obj_z": 0.047133303112462506,
+      "table_load": 0.0,
+      "finger_load": 0.45417767538973347,
+      "n_ft": 3,
+      "loads": [
+        0.017328946816210826,
+        0.0,
+        0.0
+      ],
+      "consistency": 1.519382284452728,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 129,
+      "obj_z": 0.047698458106603725,
+      "table_load": 0.0,
+      "finger_load": 0.017328946816210826,
+      "n_ft": 1,
+      "loads": [
+        0.0,
+        0.0,
+        0.08702068572541846
+      ],
+      "consistency": 1.0,
+      "rank": 0,
+      "null_dim": 6,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 130,
+      "obj_z": 0.046830419292618095,
+      "table_load": 0.1924194030026964,
+      "finger_load": 0.08702068572541846,
+      "n_ft": 1,
+      "loads": [
+        0.06319214628725235,
+        0.0,
+        0.0
+      ],
+      "consistency": 0.9851038552815707,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 131,
+      "obj_z": 0.04703815379400379,
+      "table_load": 0.05522055148559891,
+      "finger_load": 0.06319214628725235,
+      "n_ft": 1,
+      "loads": [
+        0.02314203995991603,
+        0.0,
+        0.0
+      ],
+      "consistency": 1.0,
+      "rank": 0,
+      "null_dim": 6,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 132,
+      "obj_z": 0.0473740606472582,
+      "table_load": 0.0,
+      "finger_load": 0.02314203995991603,
+      "n_ft": 1,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": 1.0,
+      "rank": 0,
+      "null_dim": 6,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 133,
+      "obj_z": 0.04629731415954339,
+      "table_load": 0.08290843749702183,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.04676543259156921,
+        0.0,
+        0.05958474027130216
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 134,
+      "obj_z": 0.044748141269735114,
+      "table_load": 0.083412173828992,
+      "finger_load": 0.10635017286287138,
+      "n_ft": 2,
+      "loads": [
+        0.2165716895946424,
+        0.08253495658602492,
+        0.31738188941682133
+      ],
+      "consistency": 0.7080929827734064,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 135,
+      "obj_z": 0.04349093055126355,
+      "table_load": 0.20920376664489856,
+      "finger_load": 0.6164885355974886,
+      "n_ft": 3,
+      "loads": [
+        0.13162386419007585,
+        0.0,
+        0.17462226700348868
+      ],
+      "consistency": 0.841333399113829,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 136,
+      "obj_z": 0.04243784812100308,
+      "table_load": 0.16572248014455457,
+      "finger_load": 0.30624613119356453,
+      "n_ft": 2,
+      "loads": [
+        0.2437649076064034,
+        0.0,
+        0.37592474222781347
+      ],
+      "consistency": 1.083752995516563,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 137,
+      "obj_z": 0.042939628826425706,
+      "table_load": 0.18012883947126265,
+      "finger_load": 0.6196896498342168,
+      "n_ft": 2,
+      "loads": [
+        0.22710573757697627,
+        0.14902580636625096,
+        0.38561156558983367
+      ],
+      "consistency": 0.8777958326528421,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 138,
+      "obj_z": 0.04370146734959188,
+      "table_load": 0.18229105063229906,
+      "finger_load": 0.7617431095330609,
+      "n_ft": 3,
+      "loads": [
+        0.25914895474377986,
+        0.0,
+        0.3670764783335607
+      ],
+      "consistency": 1.0904628002945014,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 139,
+      "obj_z": 0.04409597536531933,
+      "table_load": 0.16889771599668105,
+      "finger_load": 0.6262254330773406,
+      "n_ft": 2,
+      "loads": [
+        0.15833259510938583,
+        0.0,
+        0.10010896610735998
+      ],
+      "consistency": 0.8293414580496825,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 140,
+      "obj_z": 0.045146183284480966,
+      "table_load": 0.0,
+      "finger_load": 0.2584415612167458,
+      "n_ft": 2,
+      "loads": [
+        0.20373077385531996,
+        0.0,
+        0.17450837624607343
+      ],
+      "consistency": 1.3904776057835793,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": 0.014067514774330818,
+      "d_obj": 7.2095694474814e-05
+    },
+    {
+      "k": 141,
+      "obj_z": 0.04572841069576342,
+      "table_load": 0.02510396970915812,
+      "finger_load": 0.3782391501013934,
+      "n_ft": 2,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": 0.5955876702111094,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 142,
+      "obj_z": 0.04606987434923159,
+      "table_load": 0.07658410937505702,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.07264399145049821,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 143,
+      "obj_z": 0.045696290819853776,
+      "table_load": 0.07090895481433761,
+      "finger_load": 0.07264399145049821,
+      "n_ft": 1,
+      "loads": [
+        0.12754801318313583,
+        0.14174756547217507,
+        0.1446452295002333
+      ],
+      "consistency": 1.0,
+      "rank": 0,
+      "null_dim": 6,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 144,
+      "obj_z": 0.04568533885178847,
+      "table_load": 0.0,
+      "finger_load": 0.41394080815554424,
+      "n_ft": 3,
+      "loads": [
+        0.1975776786479354,
+        0.1250346419675254,
+        0.16085400529141242
+      ],
+      "consistency": 0.4669417086630369,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 145,
+      "obj_z": 0.04827105230211532,
+      "table_load": 0.0,
+      "finger_load": 0.4834663259068732,
+      "n_ft": 3,
+      "loads": [
+        0.2806548027665382,
+        0.07866534290493217,
+        0.20861199447344894
+      ],
+      "consistency": 0.508557668595489,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 146,
+      "obj_z": 0.05184897326393131,
+      "table_load": 0.0,
+      "finger_load": 0.5679321401449193,
+      "n_ft": 3,
+      "loads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "consistency": 0.36764502820133343,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 147,
+      "obj_z": 0.053311745419234106,
+      "table_load": 0.0,
+      "finger_load": 0.0,
+      "n_ft": 0,
+      "loads": [
+        0.06464803172758618,
+        0.0,
+        0.0
+      ],
+      "consistency": null,
+      "rank": null,
+      "null_dim": null,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 148,
+      "obj_z": 0.051905639553762165,
+      "table_load": 0.0,
+      "finger_load": 0.06464803172758618,
+      "n_ft": 1,
+      "loads": [
+        0.25784422700442045,
+        0.10153647483602192,
+        0.23432860138643297
+      ],
+      "consistency": 1.0,
+      "rank": 0,
+      "null_dim": 6,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 149,
+      "obj_z": 0.050548467230444365,
+      "table_load": 0.0,
+      "finger_load": 0.5937093032268753,
+      "n_ft": 3,
+      "loads": [
+        0.4847996592135357,
+        0.2067306660325013,
+        0.34227271840373996
+      ],
+      "consistency": 0.6524436526806413,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 150,
+      "obj_z": 0.053307179603012116,
+      "table_load": 0.0,
+      "finger_load": 1.033803043649777,
+      "n_ft": 3,
+      "loads": [
+        0.4340221444925572,
+        0.1589192063710168,
+        0.30364114582012885
+      ],
+      "consistency": 0.5377928489177675,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 151,
+      "obj_z": 0.05708211932422096,
+      "table_load": 0.0,
+      "finger_load": 0.8965824966837028,
+      "n_ft": 3,
+      "loads": [
+        0.3899949840930133,
+        0.04022398188489643,
+        0.31095250473609926
+      ],
+      "consistency": 0.5898474621411136,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 152,
+      "obj_z": 0.06092243881744335,
+      "table_load": 0.0,
+      "finger_load": 0.741171470714009,
+      "n_ft": 3,
+      "loads": [
+        0.3911391351739813,
+        0.0,
+        0.3829669950982797
+      ],
+      "consistency": 0.45856633001453817,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 153,
+      "obj_z": 0.06485637596344307,
+      "table_load": 0.0,
+      "finger_load": 0.7741061302722609,
+      "n_ft": 2,
+      "loads": [
+        0.26163017516513426,
+        0.0,
+        0.24992542283714034
+      ],
+      "consistency": 0.17476884361772715,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 154,
+      "obj_z": 0.06734183399115226,
+      "table_load": 0.0,
+      "finger_load": 0.5115555980022746,
+      "n_ft": 2,
+      "loads": [
+        0.22417656488994792,
+        0.032812536442303836,
+        0.20024375666170338
+      ],
+      "consistency": 0.1785482136238924,
+      "rank": 3,
+      "null_dim": 3,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 155,
+      "obj_z": 0.06912284473752252,
+      "table_load": 0.0,
+      "finger_load": 0.4572328579939551,
+      "n_ft": 3,
+      "loads": [
+        0.33445061499101536,
+        0.0891255262454468,
+        0.29825766882360033
+      ],
+      "consistency": 0.06635269593202267,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 156,
+      "obj_z": 0.07138712045411999,
+      "table_load": 0.0,
+      "finger_load": 0.7218338100600625,
+      "n_ft": 3,
+      "loads": [
+        0.3575797100464245,
+        0.14614957427601585,
+        0.32458126695478295
+      ],
+      "consistency": 0.22482746037360857,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 157,
+      "obj_z": 0.07333264544744211,
+      "table_load": 0.0,
+      "finger_load": 0.8283105512772233,
+      "n_ft": 3,
+      "loads": [
+        0.39283986743644417,
+        0.1588084730879626,
+        0.3553001700015272
+      ],
+      "consistency": 0.21514251133616355,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 158,
+      "obj_z": 0.07529906873584641,
+      "table_load": 0.0,
+      "finger_load": 0.9069485105259341,
+      "n_ft": 3,
+      "loads": [
+        0.48374728792408056,
+        0.1437724315370553,
+        0.43276687167076194
+      ],
+      "consistency": 0.11458341981432978,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 159,
+      "obj_z": 0.07766325130137275,
+      "table_load": 0.0,
+      "finger_load": 1.0602865911318977,
+      "n_ft": 3,
+      "loads": [
+        0.4684469161200222,
+        0.13860771347241266,
+        0.4289036352292513
+      ],
+      "consistency": 0.10130252383059044,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 160,
+      "obj_z": 0.08001816906694635,
+      "table_load": 0.0,
+      "finger_load": 1.035958264821686,
+      "n_ft": 3,
+      "loads": [
+        0.47466239500287505,
+        0.10915618471883692,
+        0.43657265534132594
+      ],
+      "consistency": 0.06959856469782245,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": 0.03377268177121575,
+      "d_obj": 0.00014371214720238653
+    },
+    {
+      "k": 161,
+      "obj_z": 0.0823063600945639,
+      "table_load": 0.0,
+      "finger_load": 1.020391235063038,
+      "n_ft": 3,
+      "loads": [
+        0.48124024098109713,
+        0.10806362856917104,
+        0.449293718563103
+      ],
+      "consistency": 0.08395170330232334,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 162,
+      "obj_z": 0.08453877327908285,
+      "table_load": 0.0,
+      "finger_load": 1.038597588113371,
+      "n_ft": 3,
+      "loads": [
+        0.4783215680519406,
+        0.08558454855012829,
+        0.4448537716121455
+      ],
+      "consistency": 0.128334022365521,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 163,
+      "obj_z": 0.08664290192941154,
+      "table_load": 0.0,
+      "finger_load": 1.0087598882142144,
+      "n_ft": 3,
+      "loads": [
+        0.4874985128997693,
+        0.05461386439736008,
+        0.45650199796436924
+      ],
+      "consistency": 0.2160462534672156,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 164,
+      "obj_z": 0.08851628054101517,
+      "table_load": 0.0,
+      "finger_load": 0.9986143752614987,
+      "n_ft": 3,
+      "loads": [
+        0.4647097684370673,
+        0.07405742395727047,
+        0.42253760647040506
+      ],
+      "consistency": 0.18821080486839425,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 165,
+      "obj_z": 0.09041449276554125,
+      "table_load": 0.0,
+      "finger_load": 0.9613047988647428,
+      "n_ft": 3,
+      "loads": [
+        0.3816444252423647,
+        0.013395119844426392,
+        0.3401612282714661
+      ],
+      "consistency": 0.2128963065859705,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 166,
+      "obj_z": 0.09230619375230475,
+      "table_load": 0.0,
+      "finger_load": 0.7352007733582572,
+      "n_ft": 3,
+      "loads": [
+        0.3818587645714562,
+        0.05305022886072936,
+        0.35979803169595476
+      ],
+      "consistency": 0.20740183826844694,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 167,
+      "obj_z": 0.09427549602220524,
+      "table_load": 0.0,
+      "finger_load": 0.7947070251281403,
+      "n_ft": 3,
+      "loads": [
+        0.3725440849860261,
+        0.0580256783224727,
+        0.34584067495263315
+      ],
+      "consistency": 0.13116576820984713,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 168,
+      "obj_z": 0.09579943185327026,
+      "table_load": 0.0,
+      "finger_load": 0.7764104382611319,
+      "n_ft": 3,
+      "loads": [
+        0.3736893803232576,
+        0.044467500300109014,
+        0.33230193156916177
+      ],
+      "consistency": 0.19826626020961247,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 169,
+      "obj_z": 0.09769679319929978,
+      "table_load": 0.0,
+      "finger_load": 0.7504588121925284,
+      "n_ft": 3,
+      "loads": [
+        0.2622752781883264,
+        0.060526563952268936,
+        0.21940540514049559
+      ],
+      "consistency": 0.19849958894787764,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 170,
+      "obj_z": 0.09928509377434575,
+      "table_load": 0.0,
+      "finger_load": 0.5422072472810909,
+      "n_ft": 3,
+      "loads": [
+        0.3611092741516088,
+        0.060187243325754196,
+        0.3307210829878301
+      ],
+      "consistency": 0.6766180032435393,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 171,
+      "obj_z": 0.09944409463295495,
+      "table_load": 0.0,
+      "finger_load": 0.7520176004651931,
+      "n_ft": 3,
+      "loads": [
+        0.360882673439721,
+        0.08048359614733878,
+        0.3004886534978022
+      ],
+      "consistency": 0.24509886339322895,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 172,
+      "obj_z": 0.10064917056125673,
+      "table_load": 0.0,
+      "finger_load": 0.741854923084862,
+      "n_ft": 3,
+      "loads": [
+        0.2800841563715743,
+        0.024433972338878673,
+        0.19942425809605782
+      ],
+      "consistency": 0.8985915904916193,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 173,
+      "obj_z": 0.09910580346991942,
+      "table_load": 0.0,
+      "finger_load": 0.5039423868065108,
+      "n_ft": 3,
+      "loads": [
+        0.20988017950196028,
+        0.017873435108411523,
+        0.19869824885781268
+      ],
+      "consistency": 0.9732869592656928,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 174,
+      "obj_z": 0.0994437233548989,
+      "table_load": 0.0,
+      "finger_load": 0.4264518634681845,
+      "n_ft": 3,
+      "loads": [
+        0.2169328416100571,
+        0.147493101305949,
+        0.1649679480143849
+      ],
+      "consistency": 0.597910537562749,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 175,
+      "obj_z": 0.09816066737647904,
+      "table_load": 0.0,
+      "finger_load": 0.529393890930391,
+      "n_ft": 3,
+      "loads": [
+        0.23126443294125454,
+        0.17756912234314604,
+        0.1905518194386656
+      ],
+      "consistency": 0.8965509497726717,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 176,
+      "obj_z": 0.10025895861630707,
+      "table_load": 0.0,
+      "finger_load": 0.5993853747230662,
+      "n_ft": 3,
+      "loads": [
+        0.2022151624723523,
+        0.1171943929941664,
+        0.13801883740687274
+      ],
+      "consistency": 0.8419793437380612,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 177,
+      "obj_z": 0.09823724018667523,
+      "table_load": 0.0,
+      "finger_load": 0.45742839287339143,
+      "n_ft": 3,
+      "loads": [
+        0.2894163601231808,
+        0.1852175201090064,
+        0.22247500357340125
+      ],
+      "consistency": 0.45408288222726884,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 178,
+      "obj_z": 0.0970068689898408,
+      "table_load": 0.0,
+      "finger_load": 0.6971088838055884,
+      "n_ft": 3,
+      "loads": [
+        0.2505982190456366,
+        0.13770576525630684,
+        0.18219466517350627
+      ],
+      "consistency": 0.8184831925149557,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 179,
+      "obj_z": 0.09817559859903303,
+      "table_load": 0.0,
+      "finger_load": 0.5704986494754497,
+      "n_ft": 3,
+      "loads": [
+        0.3476071729095359,
+        0.16705193720873548,
+        0.3246466476187185
+      ],
+      "consistency": 0.4348685770923918,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 180,
+      "obj_z": 0.09722571891760214,
+      "table_load": 0.0,
+      "finger_load": 0.8393057577369898,
+      "n_ft": 3,
+      "loads": [
+        0.360089906838452,
+        0.11085935684388339,
+        0.29858538159272946
+      ],
+      "consistency": 0.3636313682311347,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": 0.02567116923764427,
+      "d_obj": 0.00014692765810169503
+    },
+    {
+      "k": 181,
+      "obj_z": 0.09629385804926509,
+      "table_load": 0.0,
+      "finger_load": 0.7695346452750649,
+      "n_ft": 3,
+      "loads": [
+        0.3157144872924724,
+        0.10919548717153715,
+        0.23767392112614316
+      ],
+      "consistency": 0.8702060524773613,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    },
+    {
+      "k": 182,
+      "obj_z": 0.09739279139869376,
+      "table_load": 0.0,
+      "finger_load": 0.6625838955901527,
+      "n_ft": 3,
+      "loads": [
+        0.24701850975509354,
+        0.13732229025775944,
+        0.182688027996853
+      ],
+      "consistency": 0.5796878860663915,
+      "rank": 6,
+      "null_dim": 0,
+      "d_tact": null,
+      "d_obj": null
+    }
+  ]
+}
