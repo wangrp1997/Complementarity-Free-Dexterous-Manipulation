@@ -1,0 +1,178 @@
+{
+  "check": "L4_solref_scale",
+  "scale": "time_scale_sweep",
+  "convention": "CONVENTIONS.md@2026-09-22",
+  "uses": "none",
+  "n_frames_included": 6,
+  "n_frames_undetermined_excluded": 0,
+  "epsilon_x": 0.001,
+  "thresholds": {
+    "consistency_fail": {
+      "value": 1.0,
+      "provenance": "\u5173\u7cfb\u6210\u7acb\u8981\u6c42\u6b8b\u5dee\u8fdc\u5c0f\u4e8e\u63a5\u89e6\u70b9\u81ea\u8eab\u8fd0\u52a8\uff1b1.0 \u662f\u6700\u5bbd\u677e\u8fb9\u754c\uff08\u6b8b\u5dee\u7b49\u4e8e\u4fe1\u53f7\uff09\uff0cF2 \u5df2\u7528\u540c\u4e00\u53e3\u5f84"
+    }
+  },
+  "caveats": [
+    "\u63a5\u89e6\u96c6\u53d6\u8d77\u59cb\u72b6\u6001\u5168\u90e8\u7269\u4f53\u76f8\u5173\u63a5\u89e6\uff0c\u4e0d\u8bfb labels",
+    "\u4ec5\u5728 cube nominal \u4e0a\u626b\u63cf\uff1bpilot\uff0c\u4e0d\u5f97\u5347\u683c\u4e3a\u7ed3\u8bba",
+    "timestep \u4e0e solref \u65f6\u95f4\u5e38\u6570\u540c\u65f6\u53d8\u5316\uff0c\u4e8c\u8005\u5bf9\u521a\u5ea6\u7684\u8d21\u732e\u672a\u89e3\u8026",
+    "\u672a\u4fee\u6539\u4efb\u4f55\u6587\u4ef6\uff1b\u521a\u5ea6\u7ecf model.geom_solref/geom_solimp \u5185\u5b58\u4fee\u6539"
+  ],
+  "verdict": "undetermined",
+  "results": [
+    {
+      "name": "baseline",
+      "timestep": 0.002,
+      "solref_timeconst": 0.02,
+      "solimp_width": 0.001,
+      "frame_skip": 50,
+      "n_frames": 6,
+      "consistency_median": 1.4297563602153593,
+      "consistency_all": [
+        2.543,
+        1.782,
+        1.077,
+        1.009,
+        1.834,
+        0.732
+      ],
+      "adequacy_median": 1.4772325235527635,
+      "rank_values": [
+        5,
+        6
+      ]
+    },
+    {
+      "name": "stiff_x2",
+      "timestep": 0.002,
+      "solref_timeconst": 0.01,
+      "solimp_width": 0.001,
+      "frame_skip": 50,
+      "n_frames": 6,
+      "consistency_median": 1.2903183816088901,
+      "consistency_all": [
+        3.742,
+        1.723,
+        1.086,
+        1.036,
+        1.495,
+        0.729
+      ],
+      "adequacy_median": 1.3817409113417534,
+      "rank_values": [
+        5,
+        6
+      ]
+    },
+    {
+      "name": "stiff_x4",
+      "timestep": 0.002,
+      "solref_timeconst": 0.005,
+      "solimp_width": 0.001,
+      "frame_skip": 50,
+      "n_frames": 6,
+      "consistency_median": 1.2121744685476799,
+      "consistency_all": [
+        6.224,
+        1.689,
+        1.158,
+        1.057,
+        1.267,
+        0.729
+      ],
+      "adequacy_median": 1.2645788832537321,
+      "rank_values": [
+        5,
+        6
+      ]
+    },
+    {
+      "name": "stiff_x10",
+      "timestep": 0.002,
+      "solref_timeconst": 0.002,
+      "solimp_width": 0.001,
+      "frame_skip": 50,
+      "n_frames": 6,
+      "consistency_median": 1.2028983044148904,
+      "consistency_all": [
+        7.87,
+        1.668,
+        1.145,
+        1.065,
+        1.261,
+        0.767
+      ],
+      "adequacy_median": 1.2023408713586903,
+      "rank_values": [
+        5,
+        6
+      ]
+    },
+    {
+      "name": "baseline_fine_dt",
+      "timestep": 0.0005,
+      "solref_timeconst": 0.02,
+      "solimp_width": 0.001,
+      "frame_skip": 200,
+      "n_frames": 6,
+      "consistency_median": 1.1319954281163804,
+      "consistency_all": [
+        2.533,
+        1.6,
+        0.984,
+        0.943,
+        1.28,
+        0.759
+      ],
+      "adequacy_median": 1.5018648666781593,
+      "rank_values": [
+        5,
+        6
+      ]
+    },
+    {
+      "name": "fine_dt_stiff_x20",
+      "timestep": 0.0005,
+      "solref_timeconst": 0.001,
+      "solimp_width": 0.001,
+      "frame_skip": 200,
+      "n_frames": 6,
+      "consistency_median": 2.0034511667055357,
+      "consistency_all": [
+        19.735,
+        1.889,
+        2.118,
+        1.103,
+        1.419,
+        4.443
+      ],
+      "adequacy_median": 1.124400644607653,
+      "rank_values": [
+        5,
+        6
+      ]
+    },
+    {
+      "name": "hard_solimp",
+      "timestep": 0.0005,
+      "solref_timeconst": 0.001,
+      "solimp_width": 0.0001,
+      "frame_skip": 200,
+      "n_frames": 6,
+      "consistency_median": 2.1549908820466825,
+      "consistency_all": [
+        19.699,
+        1.999,
+        2.311,
+        1.119,
+        1.448,
+        4.5
+      ],
+      "adequacy_median": 1.1085152535573637,
+      "rank_values": [
+        5,
+        6
+      ]
+    }
+  ]
+}
